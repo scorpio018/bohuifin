@@ -38,6 +38,10 @@ public class SeqConst {
      * 角色ID sn_role_id
      */
     public static String SEQ_ROLE = "sn_role_id";
+    /**
+     * 用户产品投资金额ID sn_user_product_amount_id
+     */
+    public static String SEQ_AMOUNT = "sn_user_product_amount_id";
 
     /**
      * 日志ID sn_log_id

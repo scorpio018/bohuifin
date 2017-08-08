@@ -166,7 +166,7 @@
                     </div>
                     <div class="item-right">
                         <div class="fund-ctext">
-                            <div class="fund-money">可投金额:<span>143800</span>元</div>
+                            <div class="fund-money">可投金额:<span>${product.investableAmount}</span>元</div>
                         </div>
                         <button class="view-button bg_orange" onclick="#">${product.operStateBean.operStateName}</button>
                     </div>

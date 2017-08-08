@@ -40,5 +40,13 @@ public class ParamConst {
      * 登录类型
      */
     public static String LOGIN_TYPE = "loginType";
+    /**
+     * 用户余额
+     */
+    public static String USER_ACCOUNT = "userAccount";
+    /**
+     * 产品金额
+     */
+    public static String PRODUCT_ACCOUNT = "userAccount";
 
 }

@@ -25,6 +25,7 @@
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/AuthorityAuthorityGroupMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/AuthorityGroupMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/DealerTalkMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/DeptMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ManagerMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/OpLogMapper.xml"/>

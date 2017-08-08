@@ -139,9 +139,19 @@ public class ProductController {
         }
         if (ParamConst.ACT_ADD.equals(act)) {
             product.setProductId(sequencesService.haveSeq(SeqConst.SEQ_PRODUCT).toString());
+            product.setInvestableAmount(product.getProjectAmount());
             LogicUtil.getInstance().saveParamsBeforeInsert(product, request);
             productService.saveProduct(product, request);
         } else if (ParamConst.ACT_UPDATE.equals(act)) {
+            double projectAmount = product.getProjectAmount();
+            if (projectAmount != 0.0f) {
+                ProductBean cacheProductBean = cacheUtils.getProductCache().getObject(product.getProductId());
+                if (cacheProductBean.getState() == SystemConst.STATE_PASS) {
+                    request.setAttribute(ParamConst.ERROR_MSG, ErrorMsgConst.PRODUCT_IS_INVESTING);
+                    return addProductBegin(request, response, page, product, act);
+                }
+                product.setInvestableAmount(product.getProjectAmount());
+            }
             LogicUtil.getInstance().saveParamsBeforeUpdate(product, request);
             productService.updateProduct(product, request);
         }

@@ -141,7 +141,7 @@
                                                 <input type="text" class="col-xs-1" name="projectAmount" id="projectAmount" value="${requestScope.product.projectAmount}"
                                                         style="display: inline;"/>
                                                 <span class="lbl">
-                                                    <span class="middle">万元</span>
+                                                    <span class="middle">元</span>
                                                 </span>
                                             </td>
                                         </tr>
