@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  
+  <settings>
+  	<setting name="cacheEnabled" value="true"/>
+  </settings>
+  
+  <typeAliases>
+  	<typeAlias type="java.lang.Integer" alias="Integer"/>
+  </typeAliases>
+  
+  <plugins>
+  	<plugin interceptor="cn.com.bohui.bohuifin.interceptor.PageInterceptor">
+  		<property name="databaseType" value="mysql"/>
+  	</plugin>
+  </plugins>
+  
+  <mappers>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/AccessLogMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/AccountRecordMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/AuthorityMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/AuthorityAuthorityGroupMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/AuthorityGroupMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/DeptMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ManagerMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/OpLogMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/OperStateMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ProductTagMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ProductProductTagMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ProductOperStateMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ProductOperLogMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/ProductTypeMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/RoleMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/RolePrivMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/SequencesMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/SysPrivMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UserAccountsMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UserRoleMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UsersMapper.xml"/>
+  </mappers>
+</configuration>

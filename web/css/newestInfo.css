@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+/* 用作显示发布信息列表的样式 */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 14px;
+}
+
+table {
+	border-collapse:collapse; /* 关键属性：合并表格内外边框(其实表格边框有2px，外面1px，里面还有1px哦) */
+	border-width:1px 1px 1px 1px; /* 设置边框状粗细：上 右 下 左 = 对应：1px 0 0 1px */
+} 
+#title_show_tab {
+	border-width:1px 1 1 1px; /* 设置边框状粗细：上 右 下 左 = 对应：1px 1 1 1px */
+	margin-bottom: 30px;
+}
+table th,table td {
+	padding:2px;
+}
+#title_tab td {
+	height: 25px;
+}
+/* tfoot td {
+	text-align:center;
+} */
+.search_div {
+	height: 30px;
+	background-color: #EDF1F8;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.page_link {
+	cursor: pointer;
+	color: blue;
+}
+
+.page_link:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+.year_div {
+	display: none;
+}
+.title_show_tab_hid {
+	width: 550px;
+	height: auto;
+	display: none;
+}
+.title_show_tab_show {
+	width: 550px;
+	height: auto;
+	z-index: 999;
+	background-color: #fff;
+	border: 1px solid;
+	table-layout:fixed;
+}
+
+.title_span {
+	color: black;
+	text-decoration: none;
+}
+
+.title_span:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+#title_show_tab td {
+	border:0;
+	border-width:0 0px 0px 0;
+}
+.div_center {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.bottom_hr {
+	margin-top: 50px;
+	color: #72C0E6;
+}
+.close_link {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.close_link:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+.bold_td {
+	font-weight: bold;
+	width: 70px;
+}
+#suoyinhao {
+	width: 480px;
+	word-wrap:break-word;
+}
+/* 用作显示第一级的部门/目录列表 */
+.dept_tab, .category_tab {
+	width: 100%;
+	border-bottom: 10px;
+}
+
+.dept_tab td, .category_tab td{
+	height: 25px;
+	font-size: 14px;
+	padding-left: 20px;
+}
+.odd_tr {
+	background-color: #FFF;
+}
+.spot {
+	width: 30px;
+}
+.odd_tr td span, .even_tr td span {
+	margin-left: 5px;
+}
+.even_tr {
+	background-color: #F8F8F8;
+}
+.more_link {
+	color: blue;
+	text-decoration: none;
+}
+.more_link_red {
+	color: red;
+	text-decoration: none;
+}
+.more_link_red:HOVER {
+	text-decoration: underline;
+}
+.more_link:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+.info_show_td {
+	color: black;
+	text-decoration: none;
+}
+.info_show_td:HOVER {
+	color: red;
+	text-decoration: underline;
+}

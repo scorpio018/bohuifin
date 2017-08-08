@@ -1,0 +1,198 @@
+/* 全局CSS定义 */
+body {
+	font-family:"宋体", arial;
+	margin:0;
+	padding:0;
+	color:#000000;
+	background-color: #FFFFFF;
+	/*background-image: url(none);*/
+}
+div,img,ul,dl,dt,dd {margin: 0; padding: 0; border: 0; font-size:12px;}
+
+/* 链接颜色 */
+a:link {color: #000000; text-decoration:none;}
+a:visited {color: #000000;text-decoration:none;}
+a:hover {color: #0000ff;text-decoration:none;}
+
+a.shipin {background: url(http://ms.enorth.com.cn/images/shipin1.jpg) left center no-repeat;padding-left:20px;}
+
+td {
+	font-family: "宋体",Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	line-height: 22px;
+}
+.bg{
+	background-repeat: repeat-x;
+	background-position: top;
+}
+.bg1{
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg2{
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.bg3{
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.bg4{
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.zi12 {
+	font-size: 12px;
+}
+.zi14 {
+	font-size: 14px;
+}
+.zi24 {
+    font-size: 24px;
+	line-height:30px;
+}
+.heiti {
+    font-family: "黑体";
+}
+.heiti18 {
+	font-size: 18px;
+	font-family: "黑体";
+	line-height:26px;
+}
+.heiti20 {
+	font-size: 20px;
+	font-family: "黑体";
+	padding:2px 0 0;
+	line-height:30px;
+	color:#004276;
+}
+.jiacu {
+	font-weight: bold;
+}
+.p18jiacu { font-size: 18px; line-height: 120%;font-weight: bold}
+.yansebai {
+	color: #FFFFFF;
+}
+.yansehong {
+	color: #e40400;
+}
+.yansehui {
+	color: #333333;
+}
+.yanselan {
+	color: #00288e;
+}
+.lanse1 {
+	color:#0893b4;
+}
+.yanse1 {
+	color:#be3095;
+}
+.yanse2 {
+	color:#00288e;
+}
+.xinzi {
+	color: #04358d;
+}
+.xinzi_shenhong {
+	color: #910000;
+}
+.hanggao14 {
+	line-height: 14px;
+}
+.hanggao18 {
+	line-height: 18px;
+}
+.hanggao20 {
+	line-height: 20px;
+}
+.hanggao22 {
+	line-height: 22px;
+}
+.hanggao24 {
+	line-height: 24px;
+}
+.hanggao27 {
+	line-height: 27px;
+}
+.jianju{ letter-spacing:1px;}
+.kuang{
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #cddeea;
+	border-bottom-color: #cddeea;
+	border-left-color: #cddeea;
+}
+.wenbenkuang {
+	font-size: 10pt;
+	color: #333333;
+    background-color: #c1e3cd;
+	border: 1px ;
+
+}
+.biankuang {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #d1dee7;
+	border-bottom-color: #d1dee7;
+	border-left-color: #d1dee7;
+}
+.lvse {
+	color: #0d9315;
+}
+.hongse_1 {
+	color: #ff0000;
+}
+
+/* cn */
+.margin{ margin-bottom:10px;
+}
+.border{ border:1px solid #1681df;
+}
+.tit{ text-indent:20px;
+}
+.input{ height:15px; border:1px solid #88AACD;
+}
+
+.btnon{ float:left; width:145px; height:30px; line-height:30px; text-align:center; font-size:14px; font-weight:bold; color:#0E438B; background:url(../images/c_titbgo.gif); 
+}
+.btnon a, .btnon a:visited{ color:#2445B5
+}
+.btnon a:hover{ color:#CC0000
+}
+.btnout{  float:left; width:150px; height:30px; line-height:30px; text-align:center; font-size:14px; font-weight:bold; color:#666666; padding:0 10px; 
+}
+.btnout a, .btnout a:visited, .btnout a:hover{ color:#666666
+}
+
+/* 字体样式 */
+
+.fw{ color:#FFFFFF;
+}
+.fw, .fw a, .fw a:visited, .fw a:hover{ color:#FFFFFF;
+}
+.fb, .fb a, .fb a:visited{ color:#0A3063;
+}
+.fb a:hover{ color:#FF0000;
+}
+.fbr{ color:#CC6633;
+}
+
+.f12{ font-size:12px;
+}
+.f14, .f14 td{ font-size:14px;
+}
+
+ 

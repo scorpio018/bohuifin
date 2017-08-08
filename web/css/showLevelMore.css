@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 14px;
+}
+.category_tab, .dept_tab {
+	width: 600px;
+	border-bottom: 10px;
+}
+
+.category_tab td, .dept_tab td{
+	height: 25px;
+}
+.odd_tr {
+	color: #0166ce;
+	height: 39px;
+	font-size: 18px;
+	background-image: url("../images/20150623-1.png");
+	background-repeat: repeat-x;
+}
+.even_tr {
+	background-color: #F3F9FA;
+	border-top: 1px solid #D1E2E9;
+}
+.even_tr td {
+	height: 30px;
+	padding-left: 20px;
+	background-image: url("../images/right.png");
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+.more_link {
+	color: blue;
+	text-decoration: none;
+}
+.more_link_red {
+	color: red;
+	text-decoration: none;
+}
+.more_link_red:HOVER {
+	text-decoration: underline;
+}
+.more_link:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+.info_show_td {
+	color: black;
+	text-decoration: none;
+}
+.info_show_td:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+.sidebar_tab {
+	
+}

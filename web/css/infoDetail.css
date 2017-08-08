@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+/* 用作显示发布信息列表的样式 */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size: 14px;
+}
+
+table {
+	border-collapse:collapse; /* 关键属性：合并表格内外边框(其实表格边框有2px，外面1px，里面还有1px哦) */
+	border:solid #999; /* 设置边框属性；样式(solid=实线)、颜色(#999=灰) */
+	border-width:1px 0 0 1px; /* 设置边框状粗细：上 右 下 左 = 对应：1px 0 0 1px */
+} 
+#title_show_tab {
+	border-width:1px 1px 1px 1px; /* 设置边框状粗细：上 右 下 左 = 对应：1px 1 1 1px */
+	margin-bottom: 30px;
+	width: 960px;
+	table-layout:fixed;
+}
+.info_td {
+	width: 410px;
+}
+.bold_td {
+	width: 70px;
+}
+table th,table td {
+	border-width:0 1px 1px 0;
+	padding:2px;
+}
+
+#suoyinhao {
+	word-wrap:break-word;
+	width: 890px;
+}
+
+#title_tab td {
+	height: 35px;
+}
+.div_center {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.close_link {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.close_link:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+.print_link:HOVER {
+	color: red;
+	text-decoration: underline;
+}
+.fujian {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 0px solid;
+	text-align: center;
+}
+.clear {
+	clear: left;
+}
+.bottom_hr {
+	float: clear;
+}

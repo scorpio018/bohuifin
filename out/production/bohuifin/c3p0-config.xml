@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+			
+		<!-- 
+		<property name="user">gov01</property>
+	<property name="password">123456</property>
+	<property name="jdbcUrl">jdbc:mysql://10.0.101.103:3306/govopen_new_bc?charset=utf8</property>
+		<property name="driverClass">com.ibm.db2.jcc.DB2Driver</property>
+		<property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+		<property name="driverClass">com.microsoft.jdbc.sqlserver.SQLServerDriver</property>
+		   
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="initialPoolSize">5</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">20</property>
+		<property name="minPoolSize">5</property>
+		<property name="automaticTestTable">c3p0_test</property>
+		<property name="maxStatements">200</property>
+		-->
+	</default-config>
+
+</c3p0-config>

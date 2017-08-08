@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+
+body { 
+	font-family: 微软雅黑;
+	background-color:white;
+}
+
+.ziti {
+	font-family:微软雅黑
+}
+
+/* WebKit browsers */
+input::-webkit-input-placeholder {
+font-family:微软雅黑 
+}
+
+/* Mozilla Firefox 4 to 18 */
+input:-moz-placeholder {
+font-family:微软雅黑 
+}
+
+/* Mozilla Firefox 19+ */
+input::-moz-placeholder {
+font-family:微软雅黑 
+}
+
+/* Internet Explorer 10+ */
+input:-ms-input-placeholder {
+font-family:微软雅黑 
+}
+
+.help-block{
+	color:red;
+	display:inline;
+	top:-10px;
+}
+
+.browser-happy {
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	z-index:999;
+	background-color:#24a6fa;	
+}
+
+.browser-happy content{
+	text-align:text;
+	color:#fff;
+	font-size:24px;
+}
+
+.wrap{
+	word-wrap: break-word;
+	white-space:normal;
+}
+.regLabel-tit{ float:left; width:169px; padding-right:22px; text-align:right; color:#333; font-size:18px;}
+.regLabel-ct-tips{ height:33px;}
+.regLabel{ line-height:35px;}
+.reg-codeImg{ margin-left:12px; border:1px solid #c9c9c9; cursor:pointer;}
+.clearfix,.row{zoom:1;}
+.clearfix:after,.row:after{clear:both; content:"";display:block;height:0;line-height:0;visibility:hidden;}
+.regLabel-ct{ position:relative; float:left;}
+.reg-Input{ width:251px; height:35px; padding:0 10px; line-height:35px; border:1px solid #c9c9c9;}
+.reg-code{ width:143px;}
+.regLabel-tit{width:169px; padding-right:22px; text-align:right; color:#333; font-size:18px;}
+.regSubmit{ width:166px; line-height:44px; background:url(../images/queding.png) no-repeat;color:#fff; font-size:18px; letter-spacing:4px; text-align:center; border:none;cursor:pointer; text-indent:-9999999px;}
