@@ -44,6 +44,11 @@ public class SeqConst {
     public static String SEQ_AMOUNT = "sn_user_product_amount_id";
 
     /**
+     * 股神说ID sn_talk_id
+     */
+    public static String SEQ_DEALER_TALK_ID = "sn_talk_id";
+
+    /**
      * 日志ID sn_log_id
      */
     public static String SEQ_LOG = "sn_log_id";

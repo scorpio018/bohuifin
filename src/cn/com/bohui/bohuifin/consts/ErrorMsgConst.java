@@ -32,4 +32,8 @@ public class ErrorMsgConst {
     public static String INVEST_ACCOUNT_IS_GATHER_THAN_INVESTABLE_ACCOUNT = "投资金额不得大于可投金额";
 
     public static String USER_ACCOUNT_NOT_ENOUGH = "您的余额不足，请充值";
+
+    public static String NO_TALK = "没有找到对应的交易员留言";
+
+    public static String NO_DEALER = "没有找到对应的交易员";
 }

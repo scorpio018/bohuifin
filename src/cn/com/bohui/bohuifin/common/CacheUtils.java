@@ -1,7 +1,10 @@
 package cn.com.bohui.bohuifin.common;
 
 import cn.com.bohui.bohuifin.bean.*;
+import cn.com.bohui.bohuifin.bean.vo.ProductVo;
+import cn.com.bohui.bohuifin.consts.SystemConst;
 import cn.com.bohui.bohuifin.service.dealer.DealerService;
+import cn.com.bohui.bohuifin.service.dealer_talk.DealerTalkService;
 import cn.com.bohui.bohuifin.service.manager.ManagerService;
 import cn.com.bohui.bohuifin.service.product.ProductService;
 import cn.com.bohui.bohuifin.service.product_income_record.ProductIncomeRecordService;
@@ -14,6 +17,9 @@ import cn.com.enorth.utility.cache.impl.LRUCache;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Component
 public class CacheUtils {
@@ -27,6 +33,10 @@ public class CacheUtils {
     private static ICache<String, ProductBean> productCache = null;
 
     private static ICache<ProductIncomeRecordBean, ProductIncomeRecordBean> productIncomeRecordBeanICache = null;
+
+    private static ICache<Integer, DealerTalkBean> dealerTalkBeanICache = null;
+
+    private static ICache<String, List<ProductVo>> dealerProductBeansICache = null;
 
     @Resource
     private UsersService usersService;
@@ -42,6 +52,9 @@ public class CacheUtils {
 
     @Resource
     private ProductIncomeRecordService productIncomeRecordService;
+
+    @Resource
+    private DealerTalkService dealerTalkService;
 
     private static CacheCenter center = new CacheCenter();
 
@@ -165,5 +178,54 @@ public class CacheUtils {
             center.registerCache("productIncomeRecordBeanCache", productIncomeRecordBeanICache);
         }
         return productIncomeRecordBeanICache;
+    }
+
+    /**
+     * 返回DealerTalkBean缓存
+     *
+     * @return
+     */
+    public ICache<Integer, DealerTalkBean> getDealerTalkBeanCache() {
+        if (dealerTalkBeanICache == null) {
+            LRUCache<Integer, DealerTalkBean> c = new LRUCache<>();
+            c.setMaxSize(1000);
+            dealerTalkBeanICache = new Cache<Integer, DealerTalkBean>(c);
+            dealerTalkBeanICache.setObjectBuilder(new ObjectBuilder<Integer, DealerTalkBean>() {
+
+                @Override
+                public DealerTalkBean build(Integer talkId) throws Exception {
+                    return dealerTalkService.findDealerTalkById(talkId);
+                }
+            });
+
+            center.registerCache("dealerTalkBeanICache", dealerTalkBeanICache);
+        }
+        return dealerTalkBeanICache;
+    }
+
+    /**
+     * 返回交易员关联的产品集合缓存
+     *
+     * @return
+     */
+    public ICache<String, List<ProductVo>> getDealerProductBeansCache() {
+        if (dealerProductBeansICache == null) {
+            LRUCache<String, List<ProductVo>> c = new LRUCache<>();
+            c.setMaxSize(1000);
+            dealerProductBeansICache = new Cache<String, List<ProductVo>>(c);
+            dealerProductBeansICache.setObjectBuilder(new ObjectBuilder<String, List<ProductVo>>() {
+
+                @Override
+                public List<ProductVo> build(String dealerId) throws Exception {
+                    Map<String, Object> params = new HashMap<>();
+                    params.put("state", SystemConst.STATE_PASS);
+                    params.put("dealerId", dealerId);
+                    return productService.listAllProducts(params);
+                }
+            });
+
+            center.registerCache("dealerProductBeansICache", dealerProductBeansICache);
+        }
+        return dealerProductBeansICache;
     }
 }
