@@ -149,7 +149,7 @@ $(document).ready(function () {
             return false;
         }
 
-        var sqq = /^[1-9]{1}[0-9]{4,9}$/;
+        /*var sqq = /^[1-9]{1}[0-9]{4,9}$/;
         if (!sqq.test($('#qq').val()) || $('#qq').val().length < 5 || $('#qq').val().length > 12) {
             $('#qq').focus().css({
                 border: "1px solid red",
@@ -163,7 +163,7 @@ $(document).ready(function () {
                 boxShadow: "none"
             });
 
-        }
+        }*/
 
         $('#regUser').submit();
     });

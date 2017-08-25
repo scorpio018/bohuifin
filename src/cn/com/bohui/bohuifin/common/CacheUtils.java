@@ -189,7 +189,7 @@ public class CacheUtils {
         if (dealerTalkBeanICache == null) {
             LRUCache<Integer, DealerTalkBean> c = new LRUCache<>();
             c.setMaxSize(1000);
-            dealerTalkBeanICache = new Cache<Integer, DealerTalkBean>(c);
+            dealerTalkBeanICache = new Cache<>(c);
             dealerTalkBeanICache.setObjectBuilder(new ObjectBuilder<Integer, DealerTalkBean>() {
 
                 @Override

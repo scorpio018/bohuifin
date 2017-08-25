@@ -65,10 +65,10 @@ $(function() {
 		var $logo = $('.logo-img');
 		if($me.scrollTop() > event.data) {
 			$head.addClass('head-fixed');
-			$logo.attr('src','images/logo_betterment_blue.png'); 
+			$logo.attr('src','../../images/index/logo_betterment_blue.png');
 		} else {
 			$head.removeClass('head-fixed');
-			$logo.attr('src','images/logo_betterment.png'); 
+			$logo.attr('src','../../images/index/logo_betterment.png');
 		}
 	})
 

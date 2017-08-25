@@ -112,7 +112,7 @@ public class UsersController {
             usersService.updateUser(user);
         }
         cacheUtils.getUserCache().refreshCache(user.getUserId());
-        return "redirect:" + SystemConst.BASE_PATH + "users/showUser";
+        return "redirect:" + SystemConst.BASE_PATH + "admin/users/showUser";
     }
 
     @RequestMapping(value="/admin/users/beforeDel")

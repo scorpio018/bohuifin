@@ -56,128 +56,94 @@
                                 <div class="table-responsive" id="responsive">
                                     <table class="table table-striped table-bordered table-hover">
                                         <tr>
-                                            <td style="width:10%;">产品名称</td>
-                                            <td><input type="text" class="col-xs-10 col-sm-5"
-                                                       name="productName" id="productName"
-                                                       value="${requestScope.product.productName }"
-                                                       style="display: inline;"></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:10%;">产品介绍</td>
+                                            <td style="width:10%;">交易员</td>
                                             <td>
-                                                <textarea class="autosize-transition form-control" name="introduce" id="introduce">${requestScope.product.introduce }</textarea>
-                                            </td>
-                                        </tr>
-                                        <c:if test="${sessionScope.managerLogin ne null}">
-                                            <tr>
-                                                <td style="width:10%;">交易员</td>
-                                                <td>
-                                                    <select class="chosen-select input-medium" name="dealerId" id="dealerId">
-                                                        <c:forEach items="${requestScope.dealers}" var="dealer">
-                                                            <c:choose>
-                                                                <c:when test="${requestScope.product.dealerId eq dealer.dealerId}">
-                                                                    <option value="${dealer.dealerId}" selected>${dealer.trueName}</option>
-                                                                </c:when>
-                                                                <c:otherwise>
-                                                                    <option value="${dealer.dealerId}">${dealer.trueName}</option>
-                                                                </c:otherwise>
-                                                            </c:choose>
-                                                        </c:forEach>
-                                                    </select>
-                                                </td>
-                                            </tr>
-                                        </c:if>
-                                        <tr>
-                                            <td style="width:10%;">产品类型</td>
-                                            <td>
-                                                <select class="form-control input-medium" name="productTypeId" id="productTypeId">
-                                                    <c:forEach items="${requestScope.productTypes}" var="productType">
+                                                <c:choose>
+                                                    <c:when test="${requestScope.act eq 'add' }">
                                                         <c:choose>
-                                                            <c:when test="${requestScope.product.productTypeId eq productType.productTypeId}">
-                                                                <option value="${productType.productTypeId}" selected>${productType.productTypeName}</option>
+                                                            <c:when test="${sessionScope.managerLogin ne null}">
+                                                                <select class="chosen-select input-medium" name="dealerId" id="dealerId">
+                                                                    <c:forEach items="${requestScope.dealers}" var="dealer">
+                                                                        <c:choose>
+                                                                            <c:when test="${requestScope.dealerTalk.dealerId eq dealer.dealerId}">
+                                                                                <option value="${dealer.dealerId}" selected>${dealer.trueName}</option>
+                                                                            </c:when>
+                                                                            <c:otherwise>
+                                                                                <option value="${dealer.dealerId}">${dealer.trueName}</option>
+                                                                            </c:otherwise>
+                                                                        </c:choose>
+                                                                    </c:forEach>
+                                                                </select>
                                                             </c:when>
                                                             <c:otherwise>
-                                                                <option value="${productType.productTypeId}">${productType.productTypeName}</option>
+                                                                <span class="lbl">
+                                                                    <span class="middle">${sessionScope.dealerLogin.trueName}</span>
+                                                                </span>
+                                                                <input type="hidden" name="dealerId" id="dealerId" value="${sessionScope.dealerLogin.dealerId}"/>
                                                             </c:otherwise>
                                                         </c:choose>
-                                                    </c:forEach>
-                                                </select>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <span class="lbl">
+                                                            <span class="middle">${requestScope.dealerTalk.dealerBean.trueName}</span>
+                                                            <input type="hidden" name="dealerId" id="dealerId" value="${requestScope.dealerTalk.dealerBean.dealerId}"/>
+                                                        </span>
+                                                    </c:otherwise>
+                                                </c:choose>
                                             </td>
                                         </tr>
+                                        <c:choose>
+                                            <c:when test="${requestScope.products ne null}">
+                                                <tr class="product_tr">
+                                                    <td style="width:10%;">产品名</td>
+                                                    <td>
+                                                        <select class="chosen-select input-medium" name="productId" id="productId">
+                                                            <c:forEach items="${requestScope.products}" var="product">
+                                                                <c:choose>
+                                                                    <c:when test="${requestScope.dealerTalk.productId eq product.productId}">
+                                                                        <option value="${product.productId}" selected>${product.productName}</option>
+                                                                    </c:when>
+                                                                    <c:otherwise>
+                                                                        <option value="${product.productId}">${product.productName}</option>
+                                                                    </c:otherwise>
+                                                                </c:choose>
+                                                            </c:forEach>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </c:when>
+                                            <c:otherwise>
+                                                <tr class="product_tr" style="display: none;">
+                                                    <td style="width:10%;">产品名</td>
+                                                    <td>
+                                                        <select class="chosen-select input-medium" name="productId" id="productId">
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </c:otherwise>
+                                        </c:choose>
                                         <tr>
-                                            <td style="width:10%;">产品金额</td>
+                                            <td style="width:10%;">交易员留言</td>
                                             <td>
-                                                <input type="text" class="col-xs-1" name="projectAmount" id="projectAmount" value="${requestScope.product.projectAmount}"
-                                                        style="display: inline;"/>
-                                                <span class="lbl">
-                                                    <span class="middle">元</span>
-                                                </span>
+                                                <textarea class="autosize-transition form-control" name="talkContent" id="talkContent">${requestScope.dealerTalk.talkContent }</textarea>
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="width:10%;">管理费</td>
-                                            <td>
-                                                <input type="text" class="col-xs-1" name="managementCost" id="managementCost" value="${requestScope.product.managementCost}"
-                                                       style="display: inline;">
-                                                <span class="lbl">
-                                                    <span class="middle">%</span>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:10%;">止损值</td>
-                                            <td>
-                                                <input type="text" class="col-xs-1" name="stopLossValue" id="stopLossValue" value="${requestScope.product.stopLossValue}"
-                                                       style="display: inline;">
-                                                <span class="lbl">
-                                                    <span class="middle">%</span>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:10%;">预期收益率（保底收益）</td>
-                                            <td>
-                                                <input type="text" class="col-xs-1" name="expectedYield" id="expectedYield" value="${requestScope.product.expectedYield}"
-                                                       style="display: inline;">
-                                                <span class="lbl">
-                                                    <span class="middle">% (年化)</span>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width:10%;">交易周期</td>
-                                            <td>
-                                                <input type="text" class="col-xs-1" name="tradingCycle" id="tradingCycle" value="${requestScope.product.tradingCycle}"
-                                                       style="display: inline;">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="width: 10%;">标签</td>
-                                            <td>
-                                                <input type="text" name="tagNames" id="productTags" value="${requestScope.tagNames}" placeholder="请输入产品标签" />
-                                            </td>
-                                        </tr>
-                                        <tr>
+                                        <%--<tr>
                                             <td>排序</td>
                                             <td><c:choose>
-                                                <c:when test="${requestScope.product.listOrder eq 0 }">
-                                                    <input type="text" class="col-xs-1" name="listOrder" value="${requestScope.product.listOrder}"
+                                                <c:when test="${requestScope.product.listOrder ne 0 }">
+                                                    <input type="text" class="col-xs-1" name="listOrder" value="${requestScope.dealerTalk.listOrder}"
                                                            style="display: inline;">
                                                 </c:when>
                                                 <c:otherwise>
                                                     <input type="text" class="col-xs-1" name="listOrder"
-                                                           value="${requestScope.product.listOrder }"
                                                            style="display: inline;">
                                                 </c:otherwise>
                                             </c:choose></td>
-                                        </tr>
+                                        </tr>--%>
                                         <tr>
                                             <td colspan="2" class="center">
-                                                <c:if test="${sessionScope.dealerLogin ne null}">
-                                                    <input type="hidden" name="dealerId" value="${sessionScope.dealerLogin.dealerId}"/>
-                                                </c:if>
-                                                <input type="hidden" name="productId" value="${requestScope.product.productId}"/>
-                                                <input type="hidden" name="operStateId" value="${requestScope.firstOperStateBean.operStateId}"/>
+                                                <input type="hidden" name="talkId" value="${requestScope.dealerTalk.talkId}"/>
                                                 <input type="hidden" name="pageNo" value="${requestScope.page.pageNo }"/>
                                                 <input type="hidden" name="pageSize"
                                                        value="${requestScope.page.pageSize }">
@@ -278,6 +244,33 @@
         } else {
             window.location.href="<%=SystemConst.BASE_PATH%>dept/showDept?parentId=-1";
         } --%>
+    }
+
+    function getProducts(dealerId) {
+        $.ajax({
+            url: "<%=SystemConst.BASE_PATH%>admin/products/listProductsByDealer",
+            type: "POST",
+            data: {
+                "dealerId": dealerId
+            },
+            dataType: "json",
+            success: function (data) {
+                var code = data.code;
+                var resultMsg = data.resultMsg;
+                var errorMsg = data.errorMsg;
+                if (code != 0) {
+                    errorAlert(errorMsg);
+                } else {
+                    var optionHtml = "";
+                    var length = resultMsg.length;
+                    for (var i = 0; i <length; i++) {
+                        optionHtml += "<option value='" + resultMsg[i].productId + "'>" + resultMsg[i].productName + "</option>";
+                    }
+                    $("#productId").html(optionHtml);
+                    $("#product_tr").show();
+                }
+            }
+        });
     }
 </script>
 </body>

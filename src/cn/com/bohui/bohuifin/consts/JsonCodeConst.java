@@ -26,5 +26,9 @@ public class JsonCodeConst {
      * 投资金额大于可投资金额
      */
     public static int CODE_INVEST_ACCOUNT_IS_GATHER_THAN_INVESTABLE_ACCOUNT = 5;
+    /**
+     * 操作员不存在
+     */
+    public static int CODE_ERROR_NO_DEALER = 6;
 
 }

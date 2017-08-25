@@ -1,6 +1,7 @@
 package cn.com.bohui.bohuifin.controller.view;
 
 import cn.com.bohui.bohuifin.bean.DealerBean;
+import cn.com.bohui.bohuifin.bean.vo.DealerTalkVo;
 import cn.com.bohui.bohuifin.bean.vo.ProductVo;
 import cn.com.bohui.bohuifin.service.product.ProductService;
 import cn.com.bohui.bohuifin.util.StaticUtil;
@@ -29,8 +30,10 @@ public class ViewController {
     public String index(HttpServletRequest request, HttpServletResponse response) throws Exception {
         List<ProductVo> productVos = staticUtil.getProductVo();
         List<DealerBean> dealerBeans = staticUtil.getDealerBeans();
+        List<DealerTalkVo> dealerTalkBeans = staticUtil.getDealerTalkBeans();
         request.setAttribute("products", productVos);
         request.setAttribute("dealers", dealerBeans);
+        request.setAttribute("dealerTalks", dealerTalkBeans);
         return "WEB-INF/view/index";
     }
 

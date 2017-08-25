@@ -105,7 +105,7 @@
             <div class="qlogin" id="qlogin" style="display: none; ">
         </c:otherwise>
     </c:choose>
-        <div class="web_login"><form name="regForm" id="regUser" accept-charset="utf-8"  action="<%=SystemConst.BASE_PATH%>" method="post">
+        <div class="web_login"><form name="regForm" id="regUser" accept-charset="utf-8"  action="<%=SystemConst.BASE_PATH%>login/registerUser" method="post">
             <input type="hidden" name="to" value="reg"/>
             <input type="hidden" name="did" value="0"/>
             <ul class="reg_form" id="reg-ul">

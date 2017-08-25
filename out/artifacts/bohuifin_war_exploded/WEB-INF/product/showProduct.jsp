@@ -163,7 +163,7 @@
                 }, 0);
             },
             autowidth : true,
-            colNames : ['产品编号','产品名','交易员', '产品类型', '投资状态', '审核状态', '管理费', '止损值', '预期收益率', '排序', '操作'],
+            colNames : ['产品编号','产品名','交易员', '产品类型', '投资状态', '审核状态', '管理费', '止损值', '预期收益率', '星级', '排序', '操作'],
             colModel : [
                 {name:'productId',index:'p.product_id', width:40,key:true,align:'center'},
                 {name:'productName',index:'p.product_name', width:40,align:'center'},
@@ -184,6 +184,7 @@
                 {name:'managementCost',index:'p.management_cost', width:45,align:'center'},
                 {name:'stopLossValue',index:'p.stop_loss_value', width:45,align:'center'},
                 {name:'expectedYield',index:'p.expected_yield', width:45,align:'center'},
+                {name:'starLevel',index:'p.star_level', width:45,align:'center'},
                 {name:'listOrder',index:'p.list_order', width:20,align:'center'},
                 {name:'productId',index:'product_id', width:240, fixed:true,resize:false,title:false,sortable:false,
                     formatter : function(cellvalue, options, rowObject) {

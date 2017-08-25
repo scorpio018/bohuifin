@@ -86,7 +86,7 @@
                                             <label class="block clearfix">
                                                 <span class="block input-icon input-icon-right">
                                                     <input type="text" class="form-control ziti"
-                                                           placeholder="用户名" name="userName" id="userName"/>
+                                                           placeholder="用户名" name="userName" id="userName" value="${requestScope.userName}"/>
                                                     <input type="hidden" name="managerName" id="managerName"/>
                                                     <input type="hidden" name="dealerName" id="dealerName"/>
                                                     <i class="icon-user"></i>
@@ -97,7 +97,7 @@
                                                 <span class="block input-icon input-icon-right">
                                                     <input type="password" class="form-control ziti"
                                                            placeholder="密码" name="pwd" autocomplete="off"
-                                                           id="pwd" onkeydown="showImg(event, '<%=SystemConst.BASE_PATH%>');"/>
+                                                           id="pwd" onkeydown="showImg(event, '<%=SystemConst.BASE_PATH%>');" value="${requestScope.pwd}"/>
                                                     <input type="hidden" class="form-control ziti"
                                                            id="imageCodeHidd" name="imageCode"/>
                                                     <i class="icon-lock"></i>

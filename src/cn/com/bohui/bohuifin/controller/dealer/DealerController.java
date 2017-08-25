@@ -121,7 +121,7 @@ public class DealerController {
             dealerService.updateDealer(dealer, file);
         }
         cacheUtils.getDealerCache().refreshCache(dealer.getDealerId());
-        return "redirect:" + SystemConst.BASE_PATH + "dealers/showDealer";
+        return "redirect:" + SystemConst.BASE_PATH + "admin/dealers/showDealer";
     }
 
     @RequestMapping(value="/beforeDel")

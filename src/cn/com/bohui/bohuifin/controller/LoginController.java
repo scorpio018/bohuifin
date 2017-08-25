@@ -5,6 +5,7 @@ import cn.com.bohui.bohuifin.bean.DealerBean;
 import cn.com.bohui.bohuifin.bean.ManagerBean;
 import cn.com.bohui.bohuifin.bean.UsersBean;
 import cn.com.bohui.bohuifin.bean.vo.AuthorityMenuVo;
+import cn.com.bohui.bohuifin.common.Tools;
 import cn.com.bohui.bohuifin.consts.ParamConst;
 import cn.com.bohui.bohuifin.consts.SystemConst;
 import cn.com.bohui.bohuifin.enums.EnumAuthGroup;
@@ -12,7 +13,9 @@ import cn.com.bohui.bohuifin.enums.EnumMenu;
 import cn.com.bohui.bohuifin.service.authority.AuthorityService;
 import cn.com.bohui.bohuifin.service.dealer.DealerService;
 import cn.com.bohui.bohuifin.service.manager.ManagerService;
+import cn.com.bohui.bohuifin.service.sequences.SequencesService;
 import cn.com.bohui.bohuifin.service.users.UsersService;
+import cn.com.bohui.bohuifin.util.LogicUtil;
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.Producer;
 import org.springframework.stereotype.Controller;
@@ -52,6 +55,9 @@ public class LoginController {
     @Resource
     private Producer captchaProducer;
 
+    @Resource
+    private SequencesService sequencesService;
+
     @RequestMapping(value = "/userLogin")
     public String toUserLogin(HttpServletRequest request, HttpServletResponse response, String act) throws Exception {
         request.setAttribute("act", act);
@@ -65,6 +71,8 @@ public class LoginController {
 
     @RequestMapping(value = "/managerLogin", method = RequestMethod.POST)
     public String managerLogin(HttpServletRequest request, ManagerBean managerBean, String imageCode) throws Exception {
+        request.setAttribute("userName", managerBean.getManagerName());
+        request.setAttribute("pwd", managerBean.getPwd());
         String result = valcodeCheck(request, imageCode);
         if (result != null) {
             return result;
@@ -89,6 +97,8 @@ public class LoginController {
 
     @RequestMapping(value = "/dealerLogin", method = RequestMethod.POST)
     public String dealerLogin(HttpServletRequest request, DealerBean dealerBean, String imageCode) throws Exception {
+        request.setAttribute("userName", dealerBean.getDealerName());
+        request.setAttribute("pwd", dealerBean.getPwd());
         String result = valcodeCheck(request, imageCode);
         if (result != null) {
             return result;
@@ -139,6 +149,10 @@ public class LoginController {
             request.setAttribute(ParamConst.ERROR_MSG, "用户名和密码不能为空");
             return "login/Login";
         }
+        usersBean.setUserId(sequencesService.getId());
+        usersBean.setAuthorityGroupId(EnumAuthGroup.USER.value());
+        LogicUtil.getInstance().saveParamsBeforeInsert(usersBean, request);
+        Tools.setUserSaltAndPassword(usersBean, usersBean.getPwd());
         usersBean.setState(SystemConst.STATE_DEFAULT);
         usersService.saveUsers(usersBean);
         return "WEB-INF/view/index";

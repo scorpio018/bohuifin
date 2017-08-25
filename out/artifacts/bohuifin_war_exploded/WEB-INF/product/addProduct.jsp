@@ -141,7 +141,7 @@
                                                 <input type="text" class="col-xs-1" name="projectAmount" id="projectAmount" value="${requestScope.product.projectAmount}"
                                                         style="display: inline;"/>
                                                 <span class="lbl">
-                                                    <span class="middle">万元</span>
+                                                    <span class="middle">元</span>
                                                 </span>
                                             </td>
                                         </tr>
@@ -186,6 +186,12 @@
                                             <td style="width: 10%;">标签</td>
                                             <td>
                                                 <input type="text" name="tagNames" id="productTags" value="${requestScope.tagNames}" placeholder="请输入产品标签" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 10%;">星级</td>
+                                            <td>
+                                                <input type="text" name="starLevel" value="${requestScope.product.starLevel}" />
                                             </td>
                                         </tr>
                                         <tr>
@@ -252,6 +258,11 @@
                     required: true,
                     minlength: 1
                 },
+                starLevel: {
+                    required: true,
+                    maxlength: 2,
+                    minlength: 1
+                },
                 listOrder: {
                     required: true,
                     maxlength: 5,
@@ -265,6 +276,9 @@
                 },
                 introduce: {
                     required: "真实姓名不能为空"
+                },
+                starLevel: {
+                    required: "星级不能为空"
                 },
                 listOrder: {
                     required: "排序不能为空"
@@ -301,6 +315,21 @@
             tag_input.after('<textarea id="'+tag_input.attr('id')+'" name="'+tag_input.attr('name')+'" rows="3">'+tag_input.val()+'</textarea>').remove();
             //$('#productTags').autosize({append: "\n"});
         }
+
+        $( "#input-size-slider" ).css('width','200px').slider({
+            value:1,
+            range: "min",
+            min: 1,
+            max: 8,
+            step: 1,
+            slide: function( event, ui ) {
+                var sizing = ['', 'input-sm', 'input-lg', 'input-mini', 'input-small', 'input-medium', 'input-large', 'input-xlarge', 'input-xxlarge'];
+                var val = parseInt(ui.value);
+                $('#form-field-4').attr('class', sizing[val]).val('.'+sizing[val]);
+            }
+        });
+
+        $('#spinner3').ace_spinner({value:1,min:1,max:10,step:1, on_sides: true, icon_up:'icon-plus smaller-75', icon_down:'icon-minus smaller-75', btn_up_class:'btn-success' , btn_down_class:'btn-danger'});
     });
     function back() {
         window.history.go(-1);

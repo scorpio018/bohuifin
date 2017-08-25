@@ -67,14 +67,14 @@ public class LogicUtil {
     }
 
     public void saveParamsBeforeUpdate(BaseBean baseBean, HttpServletRequest request) throws Exception {
-        String createBy = getCurLoginAccountId(request.getSession());
-        baseBean.setUpdateBy(createBy);
+        String updateBy = getCurLoginAccountId(request.getSession());
+        baseBean.setUpdateBy(updateBy);
         baseBean.setUpdateTime(new Timestamp(new Date().getTime()));
     }
 
     public void saveParamsBeforeDelete(BaseBean basebean, HttpServletRequest request) throws Exception {
-        ManagerBean curLoginManagerBean = getCurLoginManagerBean(request.getSession());
-        basebean.setUpdateBy(curLoginManagerBean.getManagerId());
+        String updateBy = getCurLoginAccountId(request.getSession());
+        basebean.setUpdateBy(updateBy);
         basebean.setUpdateTime(new Timestamp(new Date().getTime()));
         basebean.setState(SystemConst.STATE_DELETE);
     }

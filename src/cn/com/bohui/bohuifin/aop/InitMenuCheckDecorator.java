@@ -26,6 +26,8 @@ public class InitMenuCheckDecorator extends InitMenuCheckAspect {
         } else if (requestURI.contains("/admin/products")) {
             LogicUtil.getInstance().saveMenu(request, "icon-certificate");
             return;
+        } else if (requestURI.contains("/admin/dealertalk")) {
+            LogicUtil.getInstance().saveMenu(request, "icon-comments");
         }
 //        RequestMapping rm = (RequestMapping) jp.getSignature().getDeclaringType().getAnnotation(RequestMapping.class);
 //        String[] value = rm.value();

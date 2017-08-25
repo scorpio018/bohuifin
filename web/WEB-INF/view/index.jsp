@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page import="cn.com.bohui.bohuifin.consts.SystemConst" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
@@ -129,8 +130,18 @@
                 <div class="buy-item" style="margin-top:16.0px;">
                     <div class="item-left" style="position:relative;">
                         <div class="star level_stars">
-                            <i class="demo-icon icon-star"></i><i class="demo-icon icon-star"></i><i
-                                class="demo-icon icon-star"></i><i class="demo-icon icon-star-half-alt"></i>
+                            <c:forEach begin="1" end="${product.starLevel}" step="1" var="level">
+                                <c:choose>
+                                    <c:when test="${level % 2 eq 0}">
+                                        <i class="demo-icon icon-star"></i>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <c:if test="{level eq product.starLevel}">
+                                            <i class="demo-icon icon-star-half-alt"></i>
+                                        </c:if>
+                                    </c:otherwise>
+                                </c:choose>
+                            </c:forEach>
                         </div>
                         <a href="#" title="">
                             <img class="photo" src="${product.dealerBean.headImg}" alt="">
@@ -168,7 +179,18 @@
                         <div class="fund-ctext">
                             <div class="fund-money">可投金额:<span>${product.investableAmount}</span>元</div>
                         </div>
-                        <button class="view-button bg_orange" onclick="#">${product.operStateBean.operStateName}</button>
+                        <c:if test="${product.operStateId eq 2}">
+                            <button class="view-button bg_white" style="cursor: auto;">${product.operStateBean.operStateName}</button>
+                        </c:if>
+                        <c:if test="${product.operStateId eq 3}">
+                            <button class="view-button bg_orange" onclick="#">${product.operStateBean.operStateName}</button>
+                        </c:if>
+                        <c:if test="${product.operStateId eq 4}">
+                            <button class="view-button bg_orange" onclick="#">${product.operStateBean.operStateName}</button>
+                        </c:if>
+                        <c:if test="${product.operStateId eq 5}">
+                            <button class="view-button bg_white" style="cursor: auto;">${product.operStateBean.operStateName}</button>
+                        </c:if>
                     </div>
                 </div>
                 <!-- 合买项目 结束 -->
@@ -179,90 +201,33 @@
         <div class="sidebar">
             <div class="c-title">股神说<a href="/forum"><span class="more">更多&gt;&gt;</span></a></div>
             <div class="gs-view">
-                <!-- 股神说单元 -->
-                <div class="view-item">
-                    <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
-                                                         src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
-                                                         alt="股神在线"></a>
-                        <div class="view-name-out">
-                            <div class="view-user-name"><a href="#" title="">股神在线</a></div>
-                            <div class="time-ago">3小时前</div>
+                <c:forEach items="${requestScope.dealerTalks}" var="dealerTalk">
+                    <!-- 股神说单元 -->
+                    <div class="view-item">
+                        <div>
+                            <a href="#" title="${dealerTalk.dealerBean.trueName}的观点"><img class="view-head"
+                                                              src="${dealerTalk.dealerBean.headImg}"
+                                                              alt="${dealerTalk.dealerBean.trueName}"></a>
+                            <div class="view-name-out">
+                                <div class="view-user-name"><a href="#" title="">${dealerTalk.dealerBean.trueName}</a></div>
+                                <div class="time-ago">
+                                    <c:choose>
+                                        <c:when test="${dealerTalk.updateTime eq null}">
+                                            <fmt:formatDate pattern="yyyy-MM-dd hh:mm:ss" value="${dealerTalk.createTime}"/>
+                                        </c:when>
+                                        <c:otherwise>
+                                            <fmt:formatDate pattern="yyyy-MM-dd hh:mm:ss" value="${dealerTalk.updateTime}"/>
+                                        </c:otherwise>
+                                    </c:choose>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
+                        <div class="view-second-title"><a href="#">#${dealerTalk.productBean.productName}#合买宣言</a></div>
+                        <div class="view-content"><a href="#">${dealerTalk.talkContent}</a></div>
                     </div>
-                    <div class="view-second-title"><a href="#">#一票定乾坤（5）#合买宣言</a></div>
-                    <div class="view-content"><a href="#">一票定乾坤（5）</a></div>
-                </div>
-                <!-- 股神说单元 结束 -->
-
-                <!-- 股神说单元 -->
-                <div class="view-item">
-                    <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
-                                                         src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
-                                                         alt="股神在线"></a>
-                        <div class="view-name-out">
-                            <div class="view-user-name"><a href="#" title="">股神在线</a></div>
-                            <div class="time-ago">3小时前</div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="view-second-title"><a href="#">#一票定乾坤（5）#合买宣言</a></div>
-                    <div class="view-content"><a href="#">一票定乾坤（5）</a></div>
-                </div>
-                <!-- 股神说单元 结束 -->
-
-                <!-- 股神说单元 -->
-                <div class="view-item">
-                    <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
-                                                         src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
-                                                         alt="股神在线"></a>
-                        <div class="view-name-out">
-                            <div class="view-user-name"><a href="#" title="">股神在线</a></div>
-                            <div class="time-ago">3小时前</div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="view-second-title"><a href="#">#一票定乾坤（5）#合买宣言</a></div>
-                    <div class="view-content"><a href="#">一票定乾坤（5）</a></div>
-                </div>
-                <!-- 股神说单元 结束 -->
-
-                <!-- 股神说单元 -->
-                <div class="view-item">
-                    <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
-                                                         src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
-                                                         alt="股神在线"></a>
-                        <div class="view-name-out">
-                            <div class="view-user-name"><a href="#" title="">股神在线</a></div>
-                            <div class="time-ago">3小时前</div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="view-second-title"><a href="#">#一票定乾坤（5）#合买宣言</a></div>
-                    <div class="view-content"><a href="#">一票定乾坤（5）</a></div>
-                </div>
-                <!-- 股神说单元 结束 -->
-
-                <!-- 股神说单元 -->
-                <div class="view-item">
-                    <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
-                                                         src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
-                                                         alt="股神在线"></a>
-                        <div class="view-name-out">
-                            <div class="view-user-name"><a href="#" title="">股神在线</a></div>
-                            <div class="time-ago">3小时前</div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="view-second-title"><a href="#">#一票定乾坤（5）#合买宣言</a></div>
-                    <div class="view-content"><a href="#">一票定乾坤（5）</a></div>
-                </div>
-                <!-- 股神说单元 结束 -->
+                    <!-- 股神说单元 结束 -->
+                </c:forEach>
             </div>
 
             <div class="c-title" style="margin-top:20px;">战神榜<a href="@"><span class="more">更多&gt;&gt;</span></a></div>

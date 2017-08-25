@@ -11,15 +11,16 @@
     <title><%=SystemConst.SYSTEM_NAME%></title>
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="js/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="js/assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="js/assets/css/ace.min.css" />
-    <link rel="stylesheet" href="js/assets/css/ace-rtl.min.css" />
-    <link rel="stylesheet" href="js/assets/css/ace-skins.min.css" />
-    <link rel="stylesheet" href="js/sweetAlert/sweet-alert.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/assets/js/chosen.jquery.min.js"></script>
-    <script src="js/sweetAlert/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="<%=SystemConst.BASE_PATH%>js/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<%=SystemConst.BASE_PATH%>js/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="<%=SystemConst.BASE_PATH%>js/assets/css/ace.min.css" />
+    <link rel="stylesheet" href="<%=SystemConst.BASE_PATH%>js/assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="<%=SystemConst.BASE_PATH%>js/assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="<%=SystemConst.BASE_PATH%>js/sweetAlert/sweet-alert.css" />
+    <link rel="stylesheet" href="<%=SystemConst.BASE_PATH%>css/style.css" />
+    <script src="<%=SystemConst.BASE_PATH%>js/assets/js/chosen.jquery.min.js"></script>
+    <script src="<%=SystemConst.BASE_PATH%>js/sweetAlert/sweet-alert.min.js"></script>
+    <script src="<%=SystemConst.BASE_PATH%>js/function.js"></script>
 </head>
 
 <body>
@@ -120,13 +121,16 @@
             colNames : ['交易员留言编号','操作员名','真实姓名', '产品名', '交易员留言', '发布时间','操作'],
             colModel : [
                 {name:'talkId',index:'dt.talk_id', width:40,key:true,align:'center'},
-                {name:'dealerName',index:'d.dealer_name', width:40,align:'center'},
-                {name:'trueName',index:'d.true_name', width:45,align:'center'},
-                {name:'productName',index:'p.nick_name', width:45,align:'center'},
+                {name:'dealerBean.dealerName',index:'d.dealer_name', width:40,align:'center'},
+                {name:'dealerBean.trueName',index:'d.true_name', width:45,align:'center'},
+                {name:'productBean.productName',index:'p.nick_name', width:45,align:'center'},
                 {name:'talkContent',index:'dt.talk_content', width:45,align:'center'},
-                {name:'createTime',index:'dt.create_time', width:45,align:'center'},
-                {name:'listOrder',index:'list_order', width:20,align:'center'},
-                {name:'dealerId',index:'dealer_id', width:240, fixed:true,resize:false,title:false,sortable:false,
+                {name:'createTime',index:'dt.create_time', width:45,align:'center',
+                    formatter: function (cellvalue, options, rowObject) {
+                        var tmp = new Date(cellvalue).format("yyyy-MM-dd hh:mm:ss");
+                        return tmp;
+                    }},
+                {name:'talkId',index:'dt.talk_id', width:240, fixed:true,resize:false,title:false,sortable:false,align:'center',
                     formatter : function(cellvalue, options, rowObject) {
                         var tmp="<div class='visible-md visible-lg hidden-sm hidden-xs action-buttons'>";
                         tmp += "<a href='javascript:void(0);' onclick='edit("+cellvalue+")' title='编辑' >编辑</a> ";
@@ -189,12 +193,12 @@
                 url : "admin/dealertalk/beforeDel",
                 type : "POST",
                 data : {
-                    dealerId : dealerId
+                    talkId : talkId
                 },
                 dataType : "text",
                 success : function(data) {
                     if (data == "success") {
-                        window.location.href = "<%=SystemConst.BASE_PATH%>admin/dealers/delDealer?talkId=" + dealerId + "&pageNo=" + pageNo + "&pageSize=" + pageSize + "&keyword=" + keyword;
+                        window.location.href = "<%=SystemConst.BASE_PATH%>admin/dealertalk/delDealerTalk?talkId=" + talkId + "&pageNo=" + pageNo + "&pageSize=" + pageSize + "&keyword=" + keyword;
                     } else {
                         swal({
                             title : data,
@@ -224,7 +228,7 @@
             },function(){
                 for (var i=0;i<sel.length;i++) {
                     selIds.push(sel[i]);
-                    window.location.href="<%=SystemConst.BASE_PATH%>admin/dealertalk/delDealerTalk?dealerIds="+selIds + "&keyword=" + keyword;
+                    window.location.href="<%=SystemConst.BASE_PATH%>admin/dealertalk/delDealerTalk?talkIds="+selIds + "&keyword=" + keyword;
                 }
             });
         } else {

@@ -107,7 +107,7 @@ public class ManagerController {
             managerService.updateManager(manager);
         }
         cacheUtils.getManagerCache().refreshCache(manager.getManagerId());
-        return "redirect:" + SystemConst.BASE_PATH + "managers/showManager";
+        return "redirect:" + SystemConst.BASE_PATH + "admin/managers/showManager";
     }
 
     @RequestMapping(value="/beforeDel")

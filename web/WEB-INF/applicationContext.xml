@@ -89,10 +89,11 @@
     <mvc:resources location="/css/" mapping="/css/**"/>
     <!-- 静态文件访问404页面-->
     <mvc:resources location="/exception/" mapping="/exception/**"/>
-    <!-- 静态文件访问html页面-->
-    <mvc:resources location="/html/" mapping="/html/**"/>
-
+    <!-- 静态文件访问font -->
+    <mvc:resources location="/font/" mapping="/font/**"/>
+    <!-- 静态文件访问upload下面的上传文件 -->
     <mvc:resources location="/upload/" mapping="/upload/**"/>
+
 
     <!-- aop实现事务代码 start -->
     <bean id="transactionManager"

@@ -34,7 +34,9 @@ public class SystemConst {
      */
     public static String ATT_FILE_TYPE = ".jpg .jpeg .gif .png";
     public static String INFO_FILE_TYPE = ".jpg .jpeg .gif .png";
-    public static String HEAD_IMG_ROOTDIR = "D:" +  File.separator + "my_workspace" +  File.separator + "bohuifin" +  File.separator + "out" +  File.separator + "artifacts" +  File.separator + "bohuifin_war_exploded" +  File.separator + "upload";
+    public static String HEAD_IMG_ROOTDIR = "D:" +  File.separator + "my_workspace" +  File.separator
+            + "bohuifin" +  File.separator + "bohuifin" +  File.separator + "out" +  File.separator + "artifacts"
+            +  File.separator + "bohuifin_war_exploded" +  File.separator + "upload";
     public static int FILE_SPLIT_NUM = 7;
 
     /**

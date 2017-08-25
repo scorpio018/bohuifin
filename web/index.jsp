@@ -524,7 +524,7 @@
                 <!-- 股神说单元 -->
                 <div class="view-item">
                     <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
+                        <a href="#" title=" 股神在线的观点"><img class="view-head"
                                                          src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
                                                          alt="股神在线"></a>
                         <div class="view-name-out">
@@ -541,7 +541,7 @@
                 <!-- 股神说单元 -->
                 <div class="view-item">
                     <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
+                        <a href="#" title=" 股神在线的观点"><img class="view-head"
                                                          src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
                                                          alt="股神在线"></a>
                         <div class="view-name-out">
@@ -558,7 +558,7 @@
                 <!-- 股神说单元 -->
                 <div class="view-item">
                     <div>
-                        <a href="# title=" 股神在线的观点"><img class="view-head"
+                        <a href="#" title=" 股神在线的观点"><img class="view-head"
                                                          src="<%=SystemConst.BASE_PATH%>images/index/img-user2.png"
                                                          alt="股神在线"></a>
                         <div class="view-name-out">

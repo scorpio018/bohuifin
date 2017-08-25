@@ -49,10 +49,6 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
             if (curLoginDealerBean == null) {
                 response.sendRedirect(SystemConst.BASE_PATH + "login/adminLogin");
                 return false;
-                /*UsersBean curLoginUsersBean = LogicUtil.getInstance().getCurLoginUsersBean(session);
-                if (curLoginUsersBean == null) {
-
-                }*/
             }
         }
         boolean hasAuth = checkCurLoginAccountUrlAuth(requestUrl, session);

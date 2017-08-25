@@ -4,17 +4,16 @@ import cn.com.bohui.bohuifin.bean.*;
 import cn.com.bohui.bohuifin.bean.vo.ProductVo;
 import cn.com.bohui.bohuifin.common.CacheUtils;
 import cn.com.bohui.bohuifin.common.Tools;
-import cn.com.bohui.bohuifin.consts.ErrorMsgConst;
-import cn.com.bohui.bohuifin.consts.ParamConst;
-import cn.com.bohui.bohuifin.consts.SeqConst;
-import cn.com.bohui.bohuifin.consts.SystemConst;
+import cn.com.bohui.bohuifin.consts.*;
 import cn.com.bohui.bohuifin.service.dealer.DealerService;
 import cn.com.bohui.bohuifin.service.oper_state.OperStateService;
 import cn.com.bohui.bohuifin.service.product.ProductService;
 import cn.com.bohui.bohuifin.service.product_tag.ProductTagService;
 import cn.com.bohui.bohuifin.service.product_type.ProductTypeService;
 import cn.com.bohui.bohuifin.service.sequences.SequencesService;
+import cn.com.bohui.bohuifin.util.JsonUtil;
 import cn.com.bohui.bohuifin.util.LogicUtil;
+import com.google.gson.JsonObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -200,6 +199,21 @@ public class ProductController {
         productBean.setState(productVo.getState());
         productService.updateState(productBean);
         return showProduct(request, response, productVo, page);
+    }
+
+    @RequestMapping(value = "/admin/products/listProductsByDealer", method = RequestMethod.POST)
+    @ResponseBody
+    public String listProductsByDealer(HttpServletRequest request, HttpServletResponse response, String dealerId) throws Exception {
+        DealerBean dealerBean = dealerService.findDealerById(dealerId);
+        if (dealerBean == null || dealerBean.getState() != SystemConst.STATE_DEFAULT) {
+            return LogicUtil.getInstance().initResultJson(JsonCodeConst.CODE_ERROR_NO_DEALER, null, ErrorMsgConst.NO_DEALER);
+        }
+        Map<String, Object> params = new HashMap<>();
+        params.put("dealerId", dealerId);
+        params.put("state", SystemConst.STATE_PASS);
+        List<ProductVo> productVos = productService.listAllProducts4View(params);
+        JsonObject jsonObject = JsonUtil.saveObjectToJson(productVos);
+        return LogicUtil.getInstance().initResultJson(JsonCodeConst.CODE_SUCCESS, jsonObject.toString(), null);
     }
 
     private void initRefData(HttpServletRequest request) throws Exception {

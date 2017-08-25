@@ -2,7 +2,6 @@ package cn.com.bohui.bohuifin.controller.dealer;
 
 import cn.com.bohui.bohuifin.bean.*;
 import cn.com.bohui.bohuifin.bean.vo.DealerTalkVo;
-import cn.com.bohui.bohuifin.bean.vo.DealerVo;
 import cn.com.bohui.bohuifin.bean.vo.ProductVo;
 import cn.com.bohui.bohuifin.common.CacheUtils;
 import cn.com.bohui.bohuifin.consts.ErrorMsgConst;
@@ -49,62 +48,62 @@ public class DealerTalkController {
     private CacheUtils cacheUtils;
 
     @RequestMapping(value = "/showDealerTalk")
-    public String showTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkBean> page) throws Exception {
+    public String showTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkVo> page) throws Exception {
         request.setAttribute("page", page);
         return "WEB-INF/dealer/showDealerTalk";
     }
 
-    @RequestMapping(value = "/dealerTalkData", method = RequestMethod.POST)
+    @RequestMapping(value = "/dealerTalkData")
     @ResponseBody
-    public Page<DealerTalkBean> dealerTalkData(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkBean> page,  DealerTalkBean dealerTalkBean) throws Exception {
-        List<DealerTalkBean> result;
-        if (dealerTalkBean == null) {
-            dealerTalkBean = new DealerTalkBean();
+    public Page<DealerTalkVo> dealerTalkData(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkVo> page,  DealerTalkVo dealerTalkVo) throws Exception {
+        List<DealerTalkVo> result;
+        if (dealerTalkVo == null) {
+            dealerTalkVo = new DealerTalkVo();
         }
-        dealerTalkBean.setState(SystemConst.STATE_DEFAULT);
-        page.setVo(dealerTalkBean);
+        dealerTalkVo.setState(SystemConst.STATE_DEFAULT);
+        page.setVo(dealerTalkVo);
         result = dealerTalkService.listDealerTalkByPage(page);
         page.setResults(result);
         return page;
     }
 
-    @RequestMapping(value = "/showAddDealerTalk", method = RequestMethod.POST)
-    public String showAddDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkBean> page, DealerTalkBean dealerTalkBean, String act) throws Exception {
+    @RequestMapping(value = "/showAddDealerTalk")
+    public String showAddDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkVo> page, DealerTalkVo dealerTalkVo, String act) throws Exception {
         initRefData(request);
         if (ParamConst.ACT_ADD.equals(act)) {
-            dealerTalkBean.setTalkId(sequencesService.haveSeq(SeqConst.SEQ_DEALER_TALK_ID).intValue());
+            dealerTalkVo.setTalkId(sequencesService.haveSeq(SeqConst.SEQ_DEALER_TALK_ID).intValue());
         } else if (ParamConst.ACT_UPDATE.equals(act)) {
-            DealerTalkBean result = dealerTalkService.findDealerTalkById(dealerTalkBean.getTalkId());
+            DealerTalkVo result = dealerTalkService.findDealerTalkById(dealerTalkVo.getTalkId());
             if (result == null) {
                 request.setAttribute(ParamConst.ERROR_MSG, ErrorMsgConst.NO_USER);
                 return showTalk(request, response, page);
             }
-            dealerTalkBean = result;
+            dealerTalkVo = result;
         } else {
             request.setAttribute(ParamConst.ERROR_MSG, ErrorMsgConst.UNKNOWN_ERROR);
             return showTalk(request, response, page);
         }
-        request.setAttribute("dealerTalk", dealerTalkBean);
+        request.setAttribute("dealerTalk", dealerTalkVo);
         request.setAttribute("act", act);
         return "WEB-INF/dealer/addDealerTalk";
     }
 
     @RequestMapping(value = "/saveDealerTalk", method = RequestMethod.POST)
-    public String saveDealer(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkBean> page, DealerTalkBean dealerTalkBean, String act) throws Exception {
-        String errorMsg = formValidate(dealerTalkBean.getTalkId(), dealerTalkBean.getDealerId(), dealerTalkBean.getProductId(), act);
+    public String saveDealer(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkVo> page, DealerTalkVo dealerTalkVo, String act) throws Exception {
+        String errorMsg = formValidate(dealerTalkVo.getTalkId(), dealerTalkVo.getDealerId(), dealerTalkVo.getProductId(), act);
         if (errorMsg != null) {
             request.setAttribute(ParamConst.ERROR_MSG, errorMsg);
-            return showAddDealerTalk(request, response, page, dealerTalkBean, act);
+            return showAddDealerTalk(request, response, page, dealerTalkVo, act);
         }
         if (ParamConst.ACT_ADD.equals(act)) {
-            LogicUtil.getInstance().saveParamsBeforeInsert(dealerTalkBean, request);
-            dealerTalkService.saveDealerTalk(dealerTalkBean);
+            LogicUtil.getInstance().saveParamsBeforeInsert(dealerTalkVo, request);
+            dealerTalkService.saveDealerTalk(dealerTalkVo);
         } else if (ParamConst.ACT_UPDATE.equals(act)) {
-            LogicUtil.getInstance().saveParamsBeforeUpdate(dealerTalkBean, request);
-            dealerTalkService.updateDealerTalk(dealerTalkBean);
+            LogicUtil.getInstance().saveParamsBeforeUpdate(dealerTalkVo, request);
+            dealerTalkService.updateDealerTalk(dealerTalkVo);
         }
-        cacheUtils.getDealerTalkBeanCache().refreshCache(dealerTalkBean.getTalkId());
-        return "redirect:" + SystemConst.BASE_PATH + "dealertalk/showDealerTalk";
+        cacheUtils.getDealerTalkBeanCache().refreshCache(dealerTalkVo.getTalkId());
+        return "redirect:" + SystemConst.BASE_PATH + "admin/dealertalk/showDealerTalk";
     }
 
     @RequestMapping(value="/beforeDel")
@@ -123,34 +122,39 @@ public class DealerTalkController {
      * @param request
      * @param response
      * @param page
-     * @param dealerTalkBean
+     * @param dealerTalkVo
      * @return
      * @throws Exception
      */
     @RequestMapping(value="/delDealerTalk")
-    public String delDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkBean> page, DealerTalkBean dealerTalkBean, Integer[] talkIds) throws Exception {
+    public String delDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkVo> page, DealerTalkVo dealerTalkVo, Integer[] talkIds) throws Exception {
         if (talkIds == null) {
-            return removeDealerTalk(request, response, page, dealerTalkBean);
+            return removeDealerTalk(request, response, page, dealerTalkVo);
         } else {
-            return removeDealerTalk(request, response, page, dealerTalkBean, talkIds);
+            return removeDealerTalk(request, response, page, dealerTalkVo, talkIds);
         }
     }
 
     private void initRefData(HttpServletRequest request) throws Exception {
         Map<String, Object> params = new HashMap<>();
-        params.put("state", SystemConst.STATE_DEFAULT);
         ManagerBean curLoginManagerBean = LogicUtil.getInstance().getCurLoginManagerBean(request.getSession());
         // 只有管理员可以进行操作员筛选
         if (curLoginManagerBean == null) {
             DealerBean curLoginDealerBean = LogicUtil.getInstance().getCurLoginDealerBean(request.getSession());
             params.put("dealerId", curLoginDealerBean.getDealerId());
+            params.put("state", SystemConst.STATE_PASS);
+            List<ProductVo> productVos = productService.listAllProducts(params);
+            request.setAttribute("products", productVos);
+            /*List<DealerVo> dealerVos = dealerService.listAllDealersJoinProducts(params);
+            request.setAttribute("dealers", dealerVos);*/
+        } else {
+            params.put("state", SystemConst.STATE_DEFAULT);
+            List<DealerBean> dealerBeans = dealerService.listAllDealers4View(params);
+            request.setAttribute("dealers", dealerBeans);
         }
-        List<DealerVo> dealerVos = dealerService.listAllDealersJoinProducts(params);
-        request.setAttribute("dealers", dealerVos);
-
-        params.put("state", SystemConst.STATE_PASS);
+        /*params.put("ProductState", SystemConst.STATE_PASS);
         List<ProductVo> productVos = productService.listAllProducts(params);
-        request.setAttribute("products", productVos);
+        request.setAttribute("products", productVos);*/
     }
 
     /**
@@ -166,13 +170,13 @@ public class DealerTalkController {
         return null;
     }
 
-    private String removeDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkBean> page, DealerTalkBean dealerTalkBean) throws Exception {
-        String result = beforeDel(request, response, dealerTalkBean.getTalkId());
+    private String removeDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkVo> page, DealerTalkVo dealerTalkVo) throws Exception {
+        String result = beforeDel(request, response, dealerTalkVo.getTalkId());
         if (result.equals("success")) {
-            dealerTalkBean.setState(SystemConst.STATE_DELETE);
-            LogicUtil.getInstance().saveParamsBeforeDelete(dealerTalkBean, request);
-            dealerTalkService.removeDealerTalkById(dealerTalkBean);
-            cacheUtils.getDealerTalkBeanCache().refreshCache(dealerTalkBean.getTalkId());
+            dealerTalkVo.setState(SystemConst.STATE_DELETE);
+            LogicUtil.getInstance().saveParamsBeforeDelete(dealerTalkVo, request);
+            dealerTalkService.removeDealerTalkById(dealerTalkVo);
+            cacheUtils.getDealerTalkBeanCache().refreshCache(dealerTalkVo.getTalkId());
             return showTalk(request, response, page);
         } else {
             request.setAttribute("errorCode", result);
@@ -180,7 +184,7 @@ public class DealerTalkController {
         }
     }
 
-    private String removeDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkBean> page, DealerTalkBean dealerTalkBean, Integer[] talkIds) throws Exception {
+    private String removeDealerTalk(HttpServletRequest request, HttpServletResponse response, Page<DealerTalkVo> page, DealerTalkVo dealerTalkVo, Integer[] talkIds) throws Exception {
         for (Integer talkId : talkIds) {
             String result = beforeDel(request, response, talkId);
             if (!result.equals("success")) {
