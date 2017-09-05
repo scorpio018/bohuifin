@@ -163,9 +163,8 @@
                 }, 0);
             },
             autowidth : true,
-            colNames : ['产品编号','产品名','交易员', '产品类型', '投资状态', '审核状态', '管理费', '止损值', '预期收益率', '星级', '排序', '操作'],
+            colNames : ['产品名','交易员', '产品类型', '投资状态', '审核状态', '项目金额', '可投资金额', '管理费', '止损值', '预期收益率', '星级', '操作'],
             colModel : [
-                {name:'productId',index:'p.product_id', width:40,key:true,align:'center'},
                 {name:'productName',index:'p.product_name', width:40,align:'center'},
                 {name:'dealerBean.trueName',index:'d.true_name', width:45,align:'center'},
                 {name:'productTypeBean.productTypeName',index:'pt.product_type_name', width:45,align:'center'},
@@ -181,25 +180,40 @@
                         }
                     }
                 },
-                {name:'managementCost',index:'p.management_cost', width:45,align:'center'},
-                {name:'stopLossValue',index:'p.stop_loss_value', width:45,align:'center'},
-                {name:'expectedYield',index:'p.expected_yield', width:45,align:'center'},
+                {name:'projectAmount',index:'p.project_amount', width:45,align:'center'},
+                {name:'investableAmount',index:'p.investable_amount', width:45,align:'center'},
+                {name:'managementCost',index:'p.management_cost', width:45,align:'center',
+                    formatter : function (cellvalue, options, rowObject) {
+                        return cellvalue + "%";
+                    }
+                },
+                {name:'stopLossValue',index:'p.stop_loss_value', width:45,align:'center',
+                    formatter : function (cellvalue, options, rowObject) {
+                        return cellvalue + "%";
+                    }
+                },
+                {name:'expectedYield',index:'p.expected_yield', width:45,align:'center',
+                    formatter : function (cellvalue, options, rowObject) {
+                        return cellvalue + "%";
+                    }
+                },
                 {name:'starLevel',index:'p.star_level', width:45,align:'center'},
-                {name:'listOrder',index:'p.list_order', width:20,align:'center'},
                 {name:'productId',index:'product_id', width:240, fixed:true,resize:false,title:false,sortable:false,
                     formatter : function(cellvalue, options, rowObject) {
                         var tmp="<div class='visible-md visible-lg hidden-sm hidden-xs action-buttons'>";
                         <c:if test="${sessionScope.managerLogin != null}">
-                        if (rowObject.state == 2000) {
-                            tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/products/changeProductState?productId=" + cellvalue + "&state=-2000' title='审核拒绝' >审核拒绝</a> ";
-                        } else {
-                            tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/products/changeProductState?productId=" + cellvalue + "&state=2000' title='审核通过' >审核通过</a> ";
+                        tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/product_oper_state/showAddOperState?productId=" + cellvalue + "' title='查看投资状态时间' >查看投资状态时间</a> ";
+                        if (rowObject.isOperIntervalSetUp == 1) {
+                            if (rowObject.state == 2000) {
+                                tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/products/changeProductState?productId=" + cellvalue + "&state=-2000' title='审核拒绝' >审核拒绝</a> ";
+                            } else {
+                                tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/products/changeProductState?productId=" + cellvalue + "&state=2000' title='审核通过' >审核通过</a> ";
+                            }
                         }
                         </c:if>
                         <c:if test="${sessionScope.dealerLogin != null}">
-                        if (rowObject.state != 2000) {
-                            tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/product_oper_state/showAddOperState?productId=" + cellvalue + "' title='设置投资状态时间' >设置投资状态时间</a> ";
-                        } else {
+                        tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/product_oper_state/showAddOperState?productId=" + cellvalue + "' title='设置投资状态时间' >设置投资状态时间</a> ";
+                        if (rowObject.state == 2000) {
                             if (!rowObject.hasCurDayIncome) {
                                 tmp += "<a href='<%=SystemConst.BASE_PATH%>admin/productIncomeRecord/addIncomeBegin?productId=" + cellvalue + "' title='设置产品收益' >设置产品收益</a> ";
                             }

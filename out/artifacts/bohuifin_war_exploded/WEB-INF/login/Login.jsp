@@ -188,7 +188,7 @@
 
 <script type="text/javascript">
     function enterSubmit(e) {
-        if (e.keyCode == 13) {
+        if (e == null || e.keyCode == 13) {
             $("#imageCodeHidd").val($("#imageCode").val());
             var loginType = $("input[name='login_type']:checked").val();
 

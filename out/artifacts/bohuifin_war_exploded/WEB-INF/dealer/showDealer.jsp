@@ -117,9 +117,8 @@
                 }, 0);
             },
             autowidth : true,
-            colNames : ['操作员编号','操作员名','真实姓名', '昵称', '头像', '排序','操作'],
+            colNames : ['操作员名','真实姓名', '昵称', '头像','操作'],
             colModel : [
-                {name:'dealerId',index:'dealer_id', width:40,key:true,align:'center'},
                 {name:'dealerName',index:'dealer_name', width:40,align:'center'},
                 {name:'trueName',index:'true_name', width:45,align:'center'},
                 {name:'nickName',index:'nick_name', width:45,align:'center'},
@@ -135,7 +134,6 @@
                         return tmp;
                     }
                 },
-                {name:'listOrder',index:'list_order', width:20,align:'center'},
                 {name:'dealerId',index:'dealer_id', width:240, fixed:true,resize:false,title:false,sortable:false,
                     formatter : function(cellvalue, options, rowObject) {
                         var tmp="<div class='visible-md visible-lg hidden-sm hidden-xs action-buttons'>";

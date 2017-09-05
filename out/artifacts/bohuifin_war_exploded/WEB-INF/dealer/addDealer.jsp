@@ -98,18 +98,22 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>排序</td>
-                                            <td><c:choose>
-                                                <c:when test="${requestScope.dealer.listOrder eq 0 }">
-                                                    <input type="text" class="col-xs-1" name="listOrder"
-                                                           style="display: inline;">
-                                                </c:when>
-                                                <c:otherwise>
-                                                    <input type="text" class="col-xs-1" name="listOrder"
-                                                           value="${requestScope.dealer.listOrder }"
-                                                           style="display: inline;">
-                                                </c:otherwise>
-                                            </c:choose></td>
+                                            <td style="width:10%;">个人简介</td>
+                                            <td>
+                                                <textarea class="autosize-transition form-control" name="introduce" id="introduce">${requestScope.dealer.introduce }</textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10%;">投资理念</td>
+                                            <td>
+                                                <textarea class="autosize-transition form-control" name="investmentPhilosophy" id="investmentPhilosophy">${requestScope.dealer.investmentPhilosophy }</textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width:10%;">投资策略</td>
+                                            <td>
+                                                <textarea class="autosize-transition form-control" name="investmentStrategy" id="investmentStrategy">${requestScope.dealer.investmentStrategy }</textarea>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td colspan="2" class="center">
@@ -164,10 +168,14 @@
                     minlength: 1,
                     maxlength: 16
                 },
-                listOrder: {
-                    required: true,
-                    maxlength: 5,
-                    minlength: 1
+                introduce: {
+                    required: true
+                },
+                investmentPhilosophy: {
+                    required: true
+                },
+                investmentStrategy: {
+                    required: true
                 }
             },
             messages: {
@@ -183,8 +191,14 @@
                     required: "昵称不能为空",
                     maxlength: "昵称不得超过16个字"
                 },
-                listOrder: {
-                    required: "排序不能为空"
+                introduce: {
+                    required: "个人简介不能为空"
+                },
+                investmentPhilosophy: {
+                    required: "投资理念不能为空"
+                },
+                investmentStrategy: {
+                    required: "投资策略不能为空"
                 }
             },
             errorPlacement: function (error, element) {

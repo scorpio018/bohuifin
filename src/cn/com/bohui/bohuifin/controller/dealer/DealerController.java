@@ -135,6 +135,17 @@ public class DealerController {
         }
     }
 
+    @RequestMapping(value = "/changePwd", method = RequestMethod.GET)
+    public String changePwd(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        return "WEB-INF/dealer/pwd";
+    }
+
+    @RequestMapping(value = "/newPassword" ,method = RequestMethod.POST)
+    @ResponseBody
+    public boolean newPassword(HttpServletRequest request, HttpServletResponse response, String oldPwd, String newPwd) throws Exception {
+        return dealerService.savePassword(request, oldPwd, newPwd);
+    }
+
     /**
      * 删除部门(不分页)
      * @param request

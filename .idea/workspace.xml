@@ -2,127 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1220e8aa-b8a4-4809-8b90-f4f0792c6076" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/产品模块和交易员模块的一期功能设计文档.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/bohuifin.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/annotation/SharedPreSaveAnnotation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/JsonUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/aop/InitMenuCheckDecorator.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/aop/InitMenuCheckDecorator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/ProductBean.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/ProductBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/UserProductAmountBean.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/UserProductAmountBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/vo/DealerVo.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/vo/DealerVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$1.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$2.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$3.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$4.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$5.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/common/CacheUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/ErrorMsgConst.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/ErrorMsgConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/JsonCodeConst.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/JsonCodeConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/ParamConst.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/ParamConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/SeqConst.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/SeqConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/SystemConst.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/consts/SystemConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/LoginController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/NumberUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/dealer/pwd.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/manager/pwd.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/DealerBean.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/DealerBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/dealer/DealerController.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/dealer/DealerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/manager/ManagerController.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/manager/ManagerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/product/ProductController.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/product/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/users/UsersController.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/users/UsersController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/view/ViewController.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/view/ViewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/enums/EnumOperState.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/enums/EnumOperState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/DealerMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/DealerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/ProductMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/ProductMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/UserAccountsMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/UserAccountsMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/dealer/DealerService.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/dealer/DealerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/product/ProductService.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/product/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/user_accounts/UserAccountsService.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/user_accounts/UserAccountsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/manager/ManagerService.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/manager/ManagerService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/util/LogicUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/util/LogicUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/util/StaticUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/util/StaticUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/aop/InitMenuCheckDecorator.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/aop/InitMenuCheckDecorator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/ProductBean.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/ProductBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/UserProductAmountBean.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/UserProductAmountBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/vo/DealerVo.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/vo/DealerVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$1.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$2.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$3.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$4.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$5.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/common/CacheUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/ErrorMsgConst.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/ErrorMsgConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/JsonCodeConst.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/JsonCodeConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/ParamConst.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/ParamConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/SeqConst.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/SeqConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/SystemConst.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/consts/SystemConst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/DealerBean.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/DealerBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/dealer/DealerController.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/dealer/DealerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/manager/ManagerController.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/manager/ManagerController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/product/ProductController.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/product/ProductController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/users/UsersController.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/users/UsersController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/view/ViewController.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/view/ViewController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/enums/EnumOperState.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/enums/EnumOperState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/DealerMapper.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/DealerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/ProductMapper.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/ProductMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/UserAccountsMapper.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/UserAccountsMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/dealer/DealerService.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/dealer/DealerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/product/ProductService.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/product/ProductService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/user_accounts/UserAccountsService.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/user_accounts/UserAccountsService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/manager/ManagerService.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/manager/ManagerService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/util/LogicUtil.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/util/LogicUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/util/StaticUtil.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/util/StaticUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/dealer/addDealer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/dealer/addDealer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/dealer/showDealer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/dealer/showDealer.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/login/Login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/login/Login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/addProduct.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/addProduct.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/addIncome.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/addIncome.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/addOperState.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/addOperState.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/showProduct.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/product/showProduct.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/sqlMapConfig.xml" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/sqlMapConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/user/addUser.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/user/addUser.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/view/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/css/ui.css" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/css/ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/common/ace-extra.js" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/common/ace-extra.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/index/index.js" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/index/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/common/common.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/common/common.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/assets/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/assets/js/jquery.validate.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/login/login.js" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/js/login/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/login/Login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/login/Login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/aop/InitMenuCheckDecorator.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/aop/InitMenuCheckDecorator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/DealerBean.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/DealerBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductBean.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/vo/DealerTalkVo.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/vo/DealerTalkVo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/common/CacheUtils.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/common/CacheUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/JsonCodeConst.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/JsonCodeConst.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductTypeBean.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductTypeBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerTalkController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerTalkController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/manager/ManagerController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/manager/ManagerController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/users/UsersController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/users/UsersController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/view/ViewController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/view/ViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/enums/EnumOperState.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/enums/EnumOperState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/LogicUtil.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/LogicUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/StaticUtil.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/StaticUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dealer/addDealerTalk.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/dealer/addDealerTalk.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dealer/showDealerTalk.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/dealer/showDealerTalk.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer/DealerService.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer/DealerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/manager/ManagerService.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/manager/ManagerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dealer/addDealer.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/dealer/addDealer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/dealer/showDealer.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/dealer/showDealer.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/login/Login.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/login/Login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/product/addProduct.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/product/addProduct.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/product/addIncome.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/product/addIncome.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/product/addOperState.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/product/addOperState.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/product/showProduct.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/product/showProduct.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/user/addUser.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/user/addUser.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/ui.css" afterPath="$PROJECT_DIR$/web/css/ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/common/ace-extra.js" afterPath="$PROJECT_DIR$/web/js/common/ace-extra.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/index/index.js" afterPath="$PROJECT_DIR$/web/js/index/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/common/common.jsp" afterPath="$PROJECT_DIR$/web/common/common.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/assets/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/web/js/assets/js/jquery.validate.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/login/login.js" afterPath="$PROJECT_DIR$/web/js/login/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login/Login.jsp" afterPath="$PROJECT_DIR$/web/login/Login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,117 +87,120 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/index.jsp">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="184" column="65" lean-forward="true" selection-start-line="184" selection-start-column="65" selection-end-line="184" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#3;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="153" column="75" lean-forward="true" selection-start-line="153" selection-start-column="75" selection-end-line="153" selection-end-column="75" />
+            <state relative-caret-position="275">
+              <caret line="135" column="59" lean-forward="true" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="产品模块和交易员模块的一期功能设计文档.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doc/产品模块和交易员模块的一期功能设计文档.txt">
+      <file leaf-file-name="ProductVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/vo/ProductVo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogicUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/LogicUtil.java">
+      <file leaf-file-name="ProductBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="82" column="74" lean-forward="true" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
+            <state relative-caret-position="195">
+              <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/users/UsersController.java">
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="107" column="62" lean-forward="true" selection-start-line="105" selection-start-column="12" selection-end-line="107" selection-end-column="62" />
+            <state relative-caret-position="184">
+              <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/users/UsersService.java">
+      <file leaf-file-name="ProductTagService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_tag/ProductTagService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="41">
+              <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/UsersMapper.xml">
+      <file leaf-file-name="UserProductAmountService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="25" />
+            <state relative-caret-position="162">
+              <caret line="98" column="18" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserProductAmountMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
               <folding>
-                <marker date="1502159099484" expanded="true" signature="2102:2676" ph="insert into t_users... " />
-                <marker date="1502159099484" expanded="true" signature="2751:2938" ph="update t_use... " />
-                <marker date="1502159099484" expanded="true" signature="3011:4568" ph="update t_use... " />
-                <marker date="1502159099484" expanded="true" signature="5465:5580" ph="select from t_users" />
-                <marker date="1502159099484" expanded="true" signature="5685:6107" ph="select from t_users" />
-                <marker date="1502159099484" expanded="true" signature="6184:6297" ph="update t_use... " />
+                <marker date="1504602004572" expanded="true" signature="927:1160" ph="insert into t_user_product_amount... " />
+                <marker date="1504602004572" expanded="true" signature="1275:1346" ph="select from t_user_product_amount" />
+                <marker date="1504602004572" expanded="true" signature="1473:1575" ph="select from t_user_product_amount" />
+                <marker date="1504602004572" expanded="true" signature="1710:1844" ph="select from t_user_product_amount" />
+                <marker date="1504602004572" expanded="true" signature="1940:2029" ph="update t_use... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login/Login.jsp">
+      <file leaf-file-name="UserProductAmountMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="24" column="113" lean-forward="false" selection-start-line="24" selection-start-column="113" selection-end-line="24" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showProduct.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/showProduct.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="205" column="65" lean-forward="true" selection-start-line="205" selection-start-column="65" selection-end-line="205" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="107" column="141" lean-forward="false" selection-start-line="107" selection-start-column="141" selection-end-line="107" selection-end-column="141" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/login/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="163" column="15" lean-forward="true" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
+              <caret line="190" column="61" lean-forward="false" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="61" />
               <folding>
-                <marker date="1503667525648" expanded="true" signature="1153:1184" ph="..." />
-                <marker date="1503667525648" expanded="true" signature="1263:1269" ph="&amp;nbsp;" />
-                <marker date="1503667525648" expanded="true" signature="1269:1275" ph="&amp;nbsp;" />
-                <marker date="1503667525648" expanded="true" signature="1372:1406" ph="..." />
+                <marker date="1504602433528" expanded="true" signature="3972:5015" ph="select p.pro... t_product" />
+                <marker date="1504602433528" expanded="true" signature="5063:6353" ph="select p.pro... t_product" />
+                <marker date="1504602433528" expanded="true" signature="6426:7009" ph="insert into t_product... " />
+                <marker date="1504602433528" expanded="true" signature="7090:8922" ph="update t_pro... " />
+                <marker date="1504602433528" expanded="true" signature="9017:9424" ph="update t_pro... " />
+                <marker date="1504602433528" expanded="true" signature="9510:9633" ph="update t_pro... " />
+                <marker date="1504602433528" expanded="true" signature="9715:9824" ph="update t_pro... " />
+                <marker date="1504602433528" expanded="true" signature="11674:11769" ph="select produ... t_product" />
+                <marker date="1504602433528" expanded="true" signature="11886:12009" ph="select from t_product" />
+                <marker date="1504602433528" expanded="true" signature="12526:12681" ph="update t_pro... " />
+                <marker date="1504602433528" expanded="true" signature="12763:12920" ph="update t_pro... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnumOperState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/enums/EnumOperState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -264,36 +219,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input_size_slider</find>
-      <find>input-size_slider</find>
-      <find>input-size0-slider</find>
-      <find>input-size0slider</find>
-      <find>input-sizeslider</find>
-      <find>input-size-slider</find>
-      <find>f明天</find>
-      <find>f明</find>
-      <find>f</find>
-      <find>fmt</find>
-      <find>tableSelect4View</find>
-      <find>fmt:</find>
-      <find>l</find>
-      <find>logo_b</find>
-      <find>logo_bt</find>
-      <find>logo_be</find>
-      <find>logo_bett</find>
-      <find>logo_better</find>
-      <find>logo_betterm</find>
-      <find>logo_bettermen</find>
-      <find>logo_betterment</find>
-      <find>Q</find>
-      <find>QQhao</find>
-      <find>QQhaom</find>
-      <find>QQhaoma</find>
-      <find>QQ号码</find>
-      <find>QQ号码ge</find>
-      <find>QQ号码格式</find>
-      <find>saveUsers</find>
-      <find>getCurLoginAccountId</find>
+      <find>select</find>
+      <find>select:</find>
+      <find>remove</find>
+      <find>enterSubmit</find>
+      <find>chosen-select</find>
+      <find>number</find>
+      <find>incomeAmount</find>
+      <find>income</find>
+      <find>changep</find>
+      <find>saveproduct</find>
+      <find>is</find>
+      <find>isOper</find>
+      <find>isOperI</find>
+      <find>isOperIn</find>
+      <find>isOperInt</find>
+      <find>isOperInte</find>
+      <find>isOperInter</find>
+      <find>isOperInterg</find>
+      <find>isOperInterva</find>
+      <find>isOperInterval</find>
+      <find>isOperIntervalS</find>
+      <find>isOperIntervalSe</find>
+      <find>isOperIntervalSet</find>
+      <find>isOperIntervalSetU</find>
+      <find>isOperIntervalSetUp</find>
+      <find>projectamount</find>
+      <find>listUserProductAmountByProduct</find>
+      <find>investableamount</find>
+      <find>updateProduct</find>
+      <find>is_oper_interval_set_up = #{isOperIntervalSetUp}</find>
     </findStrings>
     <replaceStrings>
       <replace>DeptBean</replace>
@@ -317,6 +272,7 @@
       <replace>交易员留言</replace>
       <replace>JsonObject</replace>
       <replace>System.out.println(</replace>
+      <replace>dealerLogin</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -330,57 +286,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/ErrorMsgConst.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/lib/cache2.jar!/cn/com/enorth/utility/cache/ICache.class" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/vo/DealerVo.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/DealerMapper.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer/DealerService.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/DealerTalkBean.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/login/Login.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/vo/DealerTalkVo.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/aop/InitMenuCheckDecorator.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/JsonCodeConst.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/lib/gson-2.3.1.jar!/com/google/gson/JsonObject.class" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/annotation/SharedPreSaveAnnotation.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/JsonUtil.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/ProductMapper.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product/ProductService.java" />
-        <option value="$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/http/HttpServletResponse.class" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/LogicUtil.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/common/CacheUtils.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerTalkController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dealer/addDealerTalk.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dealer/showDealerTalk.jsp" />
-        <option value="$PROJECT_DIR$/web/css/ui.css" />
-        <option value="$PROJECT_DIR$/web/font/fontello.svg" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductBean.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" />
-        <option value="$PROJECT_DIR$/web/js/common/ace-extra.js" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/product/addProduct.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/product/showProduct.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerController.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/manager/ManagerController.java" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/users/UsersController.java" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/DealerTalkMapper.java" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer_talk/DealerTalkService.java" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/StaticUtil.java" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/view/ViewController.java" />
-        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/DealerTalkMapper.xml" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/schedule/ProductOperStateFlowSchedule.java" />
         <option value="$PROJECT_DIR$/web/js/index/index.js" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/enums/EnumOperState.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" />
-        <option value="$PROJECT_DIR$/web/js/login/login.js" />
         <option value="$PROJECT_DIR$/web/login/Login.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/lib/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
         <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/doc/产品模块和交易员模块的一期功能设计文档.txt" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/DealerBean.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dealer/showDealer.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dealer/addDealer.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/user/addUser.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductTypeBean.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductOperStateController.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/LogicUtil.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/product/addOperState.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dealer/pwd.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/manager/pwd.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/manager/ManagerService.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/manager/ManagerController.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerController.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer/DealerService.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/web/common/common.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/login/Login.jsp" />
+        <option value="$PROJECT_DIR$/web/js/login/login.js" />
+        <option value="$PROJECT_DIR$/web/js/assets/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/product/addIncome.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/NumberUtil.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/product/showProduct.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductBean.java" />
+        <option value="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml" />
       </list>
     </option>
   </component>
@@ -441,7 +397,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -464,7 +419,373 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dealer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dealer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bohuifin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,6 +793,7 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -488,21 +810,21 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="GenericSQL&#10;MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\my_workspace\bohuifin\bohuifin\sql" />
-      <recent name="D:\my_workspace\bohuifin\web\WEB-INF" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\my_workspace\bohuifin\bohuifin\web\WEB-INF\dealer" />
+      <recent name="D:\my_workspace\bohuifin\bohuifin\web\WEB-INF\manager" />
+      <recent name="D:\my_workspace\bohuifin\bohuifin\doc" />
+      <recent name="D:\my_workspace\bohuifin\bohuifin\web\font" />
+      <recent name="D:\my_workspace\bohuifin\bohuifin" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.com.bohui.bohuifin.bean.vo" />
       <recent name="cn.com.bohui.bohuifin.controller.dealer" />
       <recent name="cn.com.bohui.bohuifin.controller.manager" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\my_workspace\bohuifin\bohuifin\doc" />
-      <recent name="D:\my_workspace\bohuifin\bohuifin\web\font" />
-      <recent name="D:\my_workspace\bohuifin\bohuifin" />
-      <recent name="D:\my_workspace\bohuifin\bohuifin\src\cn\com\bohui\bohuifin\annotation" />
-      <recent name="D:\my_workspace\bohuifin\bohuifin\web\WEB-INF\dealer" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\my_workspace\bohuifin\bohuifin\sql" />
+      <recent name="D:\my_workspace\bohuifin\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1059,7 +1381,9 @@
       <workItem from="1503275235724" duration="3732000" />
       <workItem from="1503384333658" duration="24737000" />
       <workItem from="1503637761973" duration="2924000" />
-      <workItem from="1503655309282" duration="5519000" />
+      <workItem from="1503655309282" duration="8079000" />
+      <workItem from="1503881977639" duration="37220000" />
+      <workItem from="1504496123367" duration="14885000" />
     </task>
     <task id="LOCAL-00001" summary="添加查看用户余额、投资产品两个功能的接口；&#10;新建“股神说”模块">
       <created>1502184347277</created>
@@ -1075,14 +1399,22 @@
       <option name="project" value="LOCAL" />
       <updated>1502358240716</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增“股神说”功能；&#10;新增产品、交易员的设计文档；&#10;备份数据库">
+      <created>1503672670681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1503672670681</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="460170000" />
+    <option name="totallyTimeSpent" value="514835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1096,18 +1428,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4049676" sideWeight="0.49574015" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41036716" sideWeight="0.49574015" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32721382" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3168264" sideWeight="0.49369368" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3232162" sideWeight="0.49369368" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26332623" sideWeight="0.5063063" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1128,7 +1460,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加查看用户余额、投资产品两个功能的接口；&#10;新建“股神说”模块" />
     <MESSAGE value="新增交易员留言模块后台逻辑；&#10;新增交易员留言列表模块前台页面、新增/修改交易员留言列表模块部分代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增交易员留言模块后台逻辑；&#10;新增交易员留言列表模块前台页面、新增/修改交易员留言列表模块部分代码" />
+    <MESSAGE value="新增“股神说”功能；&#10;新增产品、交易员的设计文档；&#10;备份数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增“股神说”功能；&#10;新增产品、交易员的设计文档；&#10;备份数据库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1145,8 +1478,14 @@
           <properties />
           <option name="timeStamp" value="100" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerController.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="112" />
+      <option name="time" value="132" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1155,453 +1494,463 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/common/CacheUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductTypeBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="196" column="51" lean-forward="false" selection-start-line="196" selection-start-column="51" selection-end-line="196" selection-end-column="51" />
+        <state relative-caret-position="174">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/bohuifin.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="326" column="3" lean-forward="false" selection-start-line="326" selection-start-column="3" selection-end-line="326" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dealer/addDealerTalk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="142" column="49" lean-forward="true" selection-start-line="142" selection-start-column="49" selection-end-line="142" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/function.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/common/showTablePage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/DealerMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <caret line="92" column="20" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/common/common.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/user/addUser.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6358">
-          <caret line="292" column="22" lean-forward="false" selection-start-line="292" selection-start-column="22" selection-end-line="292" selection-end-column="22" />
+        <state relative-caret-position="308">
+          <caret line="197" column="40" lean-forward="true" selection-start-line="197" selection-start-column="40" selection-end-line="197" selection-end-column="40" />
           <folding>
-            <marker date="1502159100792" expanded="true" signature="2188:2622" ph="..." />
-            <marker date="1502159100792" expanded="true" signature="2213:2467" ph="{...}" />
-            <marker date="1502159100792" expanded="true" signature="2486:2610" ph="{...}" />
-            <marker date="1502159100792" expanded="true" signature="2903:3249" ph="..." />
-            <marker date="1502159100792" expanded="true" signature="2933:3238" ph="..." />
-            <marker date="1502159100792" expanded="true" signature="10651:10795" ph="..." />
+            <marker date="1503889387443" expanded="false" signature="6956:6972" ph="..." />
+            <marker date="1503889387443" expanded="false" signature="7365:7381" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dealer/showDealerTalk.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dealer/addDealer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="132" column="128" lean-forward="true" selection-start-line="132" selection-start-column="128" selection-end-line="132" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerTalkController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1738">
-          <caret line="102" column="46" lean-forward="false" selection-start-line="102" selection-start-column="30" selection-end-line="102" selection-end-column="46" />
+        <state relative-caret-position="264">
+          <caret line="117" column="44" lean-forward="true" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/ui.css">
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/DealerMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="2013" column="27" lean-forward="true" selection-start-line="2013" selection-start-column="27" selection-end-line="2013" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/font/ui.css" />
-    <entry file="file://$PROJECT_DIR$/web/font/fontello.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="348">
+          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="35" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1307">
-          <caret line="165" column="31" lean-forward="true" selection-start-line="165" selection-start-column="31" selection-end-line="165" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6468">
-          <caret line="294" column="66" lean-forward="false" selection-start-line="294" selection-start-column="66" selection-end-line="294" selection-end-column="66" />
-          <folding>
-            <marker date="1503564674718" expanded="true" signature="3972:5015" ph="select p.pro... t_product" />
-            <marker date="1503564674718" expanded="true" signature="5063:6353" ph="select p.pro... t_product" />
-            <marker date="1503564674718" expanded="true" signature="6426:7008" ph="insert into t_product... " />
-            <marker date="1503564674718" expanded="true" signature="7089:8753" ph="update t_pro... " />
-            <marker date="1503564674718" expanded="true" signature="8848:9189" ph="update t_pro... " />
-            <marker date="1503564674718" expanded="true" signature="9275:9398" ph="update t_pro... " />
-            <marker date="1503564674718" expanded="true" signature="9480:9589" ph="update t_pro... " />
-            <marker date="1503564674718" expanded="true" signature="11439:11534" ph="select produ... t_product" />
-            <marker date="1503564674718" expanded="true" signature="11651:11774" ph="select from t_product" />
-            <marker date="1503564674718" expanded="true" signature="12291:12446" ph="update t_pro... " />
-            <marker date="1503564674718" expanded="true" signature="12528:12685" ph="update t_pro... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/common/ace-extra.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="94" column="210" lean-forward="false" selection-start-line="89" selection-start-column="4" selection-end-line="94" selection-end-column="210" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="526" column="35" lean-forward="false" selection-start-line="526" selection-start-column="35" selection-end-line="526" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/addProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="192" column="48" lean-forward="true" selection-start-line="192" selection-start-column="48" selection-end-line="192" selection-end-column="48" />
-          <folding>
-            <marker date="1503664028962" expanded="true" signature="15802:15924" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/showProduct.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="186" column="81" lean-forward="true" selection-start-line="186" selection-start-column="81" selection-end-line="186" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/manager/ManagerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1773">
-          <caret line="109" column="60" lean-forward="false" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/DealerTalkMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="26" column="49" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/StaticUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="57" column="48" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="48" />
-          <folding>
-            <element signature="e#2410#2411#0" expanded="true" />
-            <element signature="e#2446#2447#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/dealer/showDealer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-726">
-          <caret line="96" column="34" lean-forward="true" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
+        <state relative-caret-position="220">
+          <caret line="136" column="43" lean-forward="false" selection-start-line="136" selection-start-column="43" selection-end-line="136" selection-end-column="43" />
           <folding>
-            <marker date="1502159099561" expanded="true" signature="6131:6157" ph="..." />
+            <marker date="1503889332716" expanded="true" signature="6030:6056" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/view/ViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/DealerBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/vo/DealerTalkVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/DealerTalkBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="151" column="34" lean-forward="true" selection-start-line="151" selection-start-column="34" selection-end-line="151" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer_talk/DealerTalkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="121" column="50" lean-forward="true" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer/DealerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="94" column="61" lean-forward="true" selection-start-line="94" selection-start-column="61" selection-end-line="94" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/addIncome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="95" column="100" lean-forward="true" selection-start-line="95" selection-start-column="37" selection-end-line="95" selection-end-column="100" />
+        <state relative-caret-position="736">
+          <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
           <folding>
-            <marker date="1502159100773" expanded="true" signature="4966:4972" ph="&amp;nbsp;" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2177#2178#0" expanded="true" />
+            <element signature="e#2358#2359#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#2527#2528#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/DealerTalkMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/ParamConst.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="163" column="110" lean-forward="true" selection-start-line="163" selection-start-column="110" selection-end-line="163" selection-end-column="110" />
-          <folding>
-            <marker date="1503666700445" expanded="true" signature="3459:4007" ph="select dt.ta... t_dealer_talk" />
-            <marker date="1503666700445" expanded="true" signature="4060:4772" ph="select dt.ta... t_dealer_talk" />
-            <marker date="1503666700445" expanded="true" signature="4851:5133" ph="insert into t_dealer_talk... " />
-            <marker date="1503666700445" expanded="true" signature="5220:5460" ph="update t_dea... " />
-            <marker date="1503666700445" expanded="true" signature="6055:6099" ph="select where... " />
-            <marker date="1503666700445" expanded="true" signature="6399:6479" ph="update t_dea... " />
-            <marker date="1503666700445" expanded="true" signature="6571:6764" ph="update t_dea... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="92" column="27" lean-forward="true" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
+        <state relative-caret-position="173">
+          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/schedule/ProductOperStateFlowSchedule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="70" column="49" lean-forward="false" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/enums/EnumOperState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/login/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2772">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1502675720452" expanded="true" signature="1202:1605" ph="..." />
-            <marker date="1502675720452" expanded="true" signature="1227:1477" ph="{...}" />
-            <marker date="1502675720452" expanded="true" signature="1496:1593" ph="{...}" />
-            <marker date="1502675720452" expanded="true" signature="2171:2692" ph="..." />
-            <marker date="1502675720452" expanded="true" signature="2217:2665" ph="..." />
-            <marker date="1502675720452" expanded="true" signature="10307:10425" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="184" column="65" lean-forward="true" selection-start-line="184" selection-start-column="65" selection-end-line="184" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#3;n#div#2;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="163" column="15" lean-forward="true" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
-          <folding>
-            <marker date="1503667525648" expanded="true" signature="1153:1184" ph="..." />
-            <marker date="1503667525648" expanded="true" signature="1263:1269" ph="&amp;nbsp;" />
-            <marker date="1503667525648" expanded="true" signature="1269:1275" ph="&amp;nbsp;" />
-            <marker date="1503667525648" expanded="true" signature="1372:1406" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="107" column="141" lean-forward="false" selection-start-line="107" selection-start-column="141" selection-end-line="107" selection-end-column="141" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/lib/spring-web-4.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="140" column="57" lean-forward="true" selection-start-line="140" selection-start-column="57" selection-end-line="140" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/UsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/users/UsersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/UsersMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="25" />
-          <folding>
-            <marker date="1502159099484" expanded="true" signature="2102:2676" ph="insert into t_users... " />
-            <marker date="1502159099484" expanded="true" signature="2751:2938" ph="update t_use... " />
-            <marker date="1502159099484" expanded="true" signature="3011:4568" ph="update t_use... " />
-            <marker date="1502159099484" expanded="true" signature="5465:5580" ph="select from t_users" />
-            <marker date="1502159099484" expanded="true" signature="5685:6107" ph="select from t_users" />
-            <marker date="1502159099484" expanded="true" signature="6184:6297" ph="update t_use... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/users/UsersController.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/addOperState.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="107" column="62" lean-forward="true" selection-start-line="105" selection-start-column="12" selection-end-line="107" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/LogicUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="82" column="74" lean-forward="true" selection-start-line="82" selection-start-column="74" selection-end-line="82" selection-end-column="74" />
+          <caret line="61" column="107" lean-forward="true" selection-start-line="61" selection-start-column="107" selection-end-line="61" selection-end-column="107" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="153" column="75" lean-forward="true" selection-start-line="153" selection-start-column="75" selection-end-line="153" selection-end-column="75" />
+        <state relative-caret-position="315">
+          <caret line="216" column="5" lean-forward="true" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/manager/pwd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="41" column="80" lean-forward="true" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dealer/pwd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="35" column="64" lean-forward="true" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
+          <folding>
+            <marker date="1503902823732" expanded="false" signature="2071:2082" ph="..." />
+            <marker date="1503902823732" expanded="false" signature="2259:2270" ph="..." />
+            <marker date="1503902823732" expanded="false" signature="2446:2457" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/ManagerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/common/Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="117" column="25" lean-forward="false" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/manager/ManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="101" column="5" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="101" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/dealer/DealerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/dealer/DealerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="100" column="108" lean-forward="true" selection-start-line="100" selection-start-column="108" selection-end-line="100" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/manager/ManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/common/common.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="370" column="80" lean-forward="true" selection-start-line="370" selection-start-column="80" selection-end-line="370" selection-end-column="80" />
+          <folding>
+            <marker date="1504169531261" expanded="true" signature="2188:2622" ph="..." />
+            <marker date="1504169531261" expanded="true" signature="2213:2467" ph="{...}" />
+            <marker date="1504169531261" expanded="true" signature="2486:2610" ph="{...}" />
+            <marker date="1504169531261" expanded="true" signature="2903:3249" ph="..." />
+            <marker date="1504169531261" expanded="true" signature="2933:3238" ph="..." />
+            <marker date="1504169531261" expanded="true" signature="10534:10678" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/calendar/fullcalendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="7355" column="11" lean-forward="false" selection-start-line="7355" selection-start-column="4" selection-end-line="7355" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/login/Login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="190" column="21" lean-forward="false" selection-start-line="190" selection-start-column="21" selection-end-line="190" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/assets/js/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="382" column="21" lean-forward="false" selection-start-line="382" selection-start-column="15" selection-end-line="382" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_income_record/ProductIncomeRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductIncomeRecordBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductIncomeRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <marker date="1504247521942" expanded="true" signature="1241:1510" ph="insert into t_product_income_record... " />
+            <marker date="1504247521942" expanded="true" signature="1615:2150" ph="update t_pro... " />
+            <marker date="1504247521942" expanded="true" signature="2281:2370" ph="select from t_product_income_record" />
+            <marker date="1504247521942" expanded="true" signature="2537:2711" ph="select from t_product_income_record" />
+            <marker date="1504247521942" expanded="true" signature="2885:3107" ph="select from t_product_income_record" />
+            <marker date="1504247521942" expanded="true" signature="3213:3304" ph="update t_pro... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doc/产品模块和交易员模块的一期功能设计文档.txt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="24" lean-forward="true" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductOperStateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="61" column="43" lean-forward="true" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/LogicUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="68" column="16" lean-forward="false" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_20x64/src.zip!/java/text/DecimalFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1592">
+          <caret line="684" column="17" lean-forward="true" selection-start-line="684" selection-start-column="17" selection-end-line="684" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_20x64/src.zip!/java/text/Format.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="155" column="24" lean-forward="false" selection-start-line="155" selection-start-column="24" selection-end-line="155" selection-end-column="24" />
+          <folding>
+            <element signature="e#5542#5543#0" expanded="false" />
+            <element signature="e#5629#5630#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/addIncome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="102" column="17" lean-forward="true" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+          <folding>
+            <marker date="1504487921453" expanded="true" signature="5157:5163" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/view/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/util/NumberUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="57" column="122" lean-forward="false" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_oper_state/ProductOperStateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/addProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2741">
+          <caret line="247" column="23" lean-forward="false" selection-start-line="247" selection-start-column="12" selection-end-line="247" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="179" column="154" lean-forward="true" selection-start-line="179" selection-start-column="154" selection-end-line="179" selection-end-column="154" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="83" column="35" lean-forward="false" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/UserProductAmountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="113" lean-forward="false" selection-start-line="24" selection-start-column="113" selection-end-line="24" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/product/showProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="205" column="65" lean-forward="true" selection-start-line="205" selection-start-column="65" selection-end-line="205" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/user_product_amount/UserProductAmountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="98" column="18" lean-forward="false" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_tag/ProductTagService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/vo/ProductVo.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/bean/ProductBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+          <folding>
+            <marker date="1504602004572" expanded="true" signature="927:1160" ph="insert into t_user_product_amount... " />
+            <marker date="1504602004572" expanded="true" signature="1275:1346" ph="select from t_user_product_amount" />
+            <marker date="1504602004572" expanded="true" signature="1473:1575" ph="select from t_user_product_amount" />
+            <marker date="1504602004572" expanded="true" signature="1710:1844" ph="select from t_user_product_amount" />
+            <marker date="1504602004572" expanded="true" signature="1940:2029" ph="update t_use... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/mapper/xml/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="190" column="61" lean-forward="false" selection-start-line="190" selection-start-column="13" selection-end-line="190" selection-end-column="61" />
+          <folding>
+            <marker date="1504602433528" expanded="true" signature="3972:5015" ph="select p.pro... t_product" />
+            <marker date="1504602433528" expanded="true" signature="5063:6353" ph="select p.pro... t_product" />
+            <marker date="1504602433528" expanded="true" signature="6426:7009" ph="insert into t_product... " />
+            <marker date="1504602433528" expanded="true" signature="7090:8922" ph="update t_pro... " />
+            <marker date="1504602433528" expanded="true" signature="9017:9424" ph="update t_pro... " />
+            <marker date="1504602433528" expanded="true" signature="9510:9633" ph="update t_pro... " />
+            <marker date="1504602433528" expanded="true" signature="9715:9824" ph="update t_pro... " />
+            <marker date="1504602433528" expanded="true" signature="11674:11769" ph="select produ... t_product" />
+            <marker date="1504602433528" expanded="true" signature="11886:12009" ph="select from t_product" />
+            <marker date="1504602433528" expanded="true" signature="12526:12681" ph="update t_pro... " />
+            <marker date="1504602433528" expanded="true" signature="12763:12920" ph="update t_pro... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="135" column="59" lean-forward="true" selection-start-line="135" selection-start-column="59" selection-end-line="135" selection-end-column="59" />
           <folding />
         </state>
       </provider>

@@ -5,14 +5,17 @@ import cn.com.bohui.bohuifin.bean.vo.ProductVo;
 import cn.com.bohui.bohuifin.common.CacheUtils;
 import cn.com.bohui.bohuifin.common.Tools;
 import cn.com.bohui.bohuifin.consts.*;
+import cn.com.bohui.bohuifin.enums.EnumOperState;
 import cn.com.bohui.bohuifin.service.dealer.DealerService;
 import cn.com.bohui.bohuifin.service.oper_state.OperStateService;
 import cn.com.bohui.bohuifin.service.product.ProductService;
 import cn.com.bohui.bohuifin.service.product_tag.ProductTagService;
 import cn.com.bohui.bohuifin.service.product_type.ProductTypeService;
 import cn.com.bohui.bohuifin.service.sequences.SequencesService;
+import cn.com.bohui.bohuifin.service.user_product_amount.UserProductAmountService;
 import cn.com.bohui.bohuifin.util.JsonUtil;
 import cn.com.bohui.bohuifin.util.LogicUtil;
+import cn.com.bohui.bohuifin.util.StaticUtil;
 import com.google.gson.JsonObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -48,6 +51,9 @@ public class ProductController {
 
     @Resource
     private ProductTagService productTagService;
+
+    @Resource
+    private UserProductAmountService userProductAmountService;
 
     @Resource
     private SequencesService sequencesService;
@@ -138,19 +144,24 @@ public class ProductController {
         }
         if (ParamConst.ACT_ADD.equals(act)) {
             product.setProductId(sequencesService.haveSeq(SeqConst.SEQ_PRODUCT).toString());
+            product.setIsOperIntervalSetUp(SystemConst.IS_OPER_INTERVAL_SET_UP_NO);
             product.setInvestableAmount(product.getProjectAmount());
             LogicUtil.getInstance().saveParamsBeforeInsert(product, request);
             productService.saveProduct(product, request);
         } else if (ParamConst.ACT_UPDATE.equals(act)) {
+            // 在审核通过时不允许修改产品
+            ProductBean cacheProductBean = cacheUtils.getProductCache().getObject(product.getProductId());
+            if (cacheProductBean.getState() == SystemConst.STATE_PASS) {
+                request.setAttribute(ParamConst.ERROR_MSG, ErrorMsgConst.PRODUCT_IS_INVESTING);
+                return addProductBegin(request, response, page, product, act);
+            }
             double projectAmount = product.getProjectAmount();
             if (projectAmount != 0.0f) {
-                ProductBean cacheProductBean = cacheUtils.getProductCache().getObject(product.getProductId());
-                if (cacheProductBean.getState() == SystemConst.STATE_PASS) {
-                    request.setAttribute(ParamConst.ERROR_MSG, ErrorMsgConst.PRODUCT_IS_INVESTING);
-                    return addProductBegin(request, response, page, product, act);
-                }
-                product.setInvestableAmount(product.getProjectAmount());
+                double productHasInvestedAmount = userProductAmountService.getProductHasInvestedAmount(product.getProductId());
+                product.setInvestableAmount(projectAmount - productHasInvestedAmount);
             }
+            product.setState(SystemConst.STATE_DEFAULT);
+            product.setOperStateId(EnumOperState.DRAFT_BOX.value());
             LogicUtil.getInstance().saveParamsBeforeUpdate(product, request);
             productService.updateProduct(product, request);
         }
@@ -198,6 +209,8 @@ public class ProductController {
         productBean.setProductId(productId);
         productBean.setState(productVo.getState());
         productService.updateState(productBean);
+        cacheUtils.getProductCache().clearCache();
+        StaticUtil.clearProductCache();
         return showProduct(request, response, productVo, page);
     }
 

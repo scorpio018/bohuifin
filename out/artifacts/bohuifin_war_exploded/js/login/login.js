@@ -41,7 +41,7 @@ function showImgCode(basePath) {
         closeEsc: true,
         buttons: {
             确定: function () {
-                enterSubmit();
+                enterSubmit(null);
             },
             cancel: {style: 'danger', text: '取消'}
         },

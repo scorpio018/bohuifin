@@ -26,7 +26,8 @@
                     confirmButtonText : "确定"
                 })
             }
-
+            <c:choose>
+            <c:when test="${sessionScope.dealerLogin ne null}">
             $("form").submit(function () {
                 var operStateStartTimes = new Array();
                 operStateStartTimes.push($("#operStateStartTime1").val());
@@ -36,6 +37,12 @@
                 $("#operStateStartTime").val(operStateStartTimes);
                 return true;
             })
+            </c:when>
+            <c:otherwise>
+            $("input[type='text']").prop("disabled", true);
+            $("input[type='submit']").hide();
+            </c:otherwise>
+            </c:choose>
         })
     </script>
 </head>

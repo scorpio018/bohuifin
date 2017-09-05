@@ -136,7 +136,7 @@
                                         <i class="demo-icon icon-star"></i>
                                     </c:when>
                                     <c:otherwise>
-                                        <c:if test="{level eq product.starLevel}">
+                                        <c:if test="${level eq product.starLevel}">
                                             <i class="demo-icon icon-star-half-alt"></i>
                                         </c:if>
                                     </c:otherwise>
@@ -168,16 +168,16 @@
                             </ul>
                             <div class="blank_none"></div>
                             <ul class="item-data-row">
-                                <li style="width:108px;"><span class="big">${product.projectAmount}</span>&nbsp;万元</li>
+                                <li style="width:108px;"><span class="big"><fmt:formatNumber value="${product.projectAmount / 10000}" maxFractionDigits="0"/></span>&nbsp;万元</li>
                                 <li style="width:85px;">T+<span class="big">${product.tradingCycle}</span></li>
-                                <li style="width:85px;"><span class="big">${product.managementCost}</span>&nbsp;%</li>
-                                <li style="width:102px;"><span class="big">${product.stopLossValue}</span>&nbsp;%</li>
+                                <li style="width:85px;"><span class="big"><fmt:formatNumber value="${product.managementCost}" maxFractionDigits="0"/></span>&nbsp;%</li>
+                                <li style="width:102px;"><span class="big"><fmt:formatNumber value="${product.stopLossValue}" maxFractionDigits="0"/></span>&nbsp;%</li>
                             </ul>
                         </div>
                     </div>
                     <div class="item-right">
                         <div class="fund-ctext">
-                            <div class="fund-money">可投金额:<span>${product.investableAmount}</span>元</div>
+                            <div class="fund-money">可投金额:<span><fmt:formatNumber value="${product.investableAmount}" maxFractionDigits="0"/></span>元</div>
                         </div>
                         <c:if test="${product.operStateId eq 2}">
                             <button class="view-button bg_white" style="cursor: auto;">${product.operStateBean.operStateName}</button>

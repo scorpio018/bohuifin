@@ -75,7 +75,12 @@
         var d = date.getDate();
         var m = date.getMonth();
         var y = date.getFullYear();
-
+        var settingIncomeDays = new Array();
+        <c:if test="${requestScope.productIncomeRecords ne null}">
+        <c:forEach items="${requestScope.productIncomeRecords}" var="vo" varStatus="idx">
+            settingIncomeDays.push(new Date("<fmt:formatDate pattern="yyyy-MM-dd" value="${vo.incomeTime}"/> 00:00:00").getTime());
+        </c:forEach>
+        </c:if>
 
         var calendar = $('#calendar').fullCalendar({
             buttonText: {
@@ -91,20 +96,22 @@
             events: [
                 <c:if test="${requestScope.productIncomeRecords ne null}">
                 <c:forEach items="${requestScope.productIncomeRecords}" var="vo" varStatus="idx">
-                <c:if test="idx.index ne 0">,</c:if>{
-                    title: "${vo.income}",
+                <c:if test="${idx.index ne 0}">,</c:if>{
+                    title: "${vo.incomeAmount}",
                     start: new Date("<fmt:formatDate pattern="yyyy-MM-dd" value="${vo.incomeTime}"/>"),
                     className: 'label-success'
                 }
                 </c:forEach>
                 </c:if>
-                ]
-            ,
+                ],
             editable: true,
             droppable: false, // this allows things to be dropped onto the calendar !!!
             selectable: true,
             selectHelper: true,
             select: function (start, end, allDay) {
+                if (settingIncomeDays.indexOf(start.getTime()) != -1) {
+                    return;
+                }
                 if (start.getTime() > new Date().getTime()) {
                     errorAlert("设置产品收益不能超过当天");
                     return;
@@ -114,23 +121,19 @@
                     inputType: 'number',
                     callback: function (title) {
                         if (title !== null) {
-                            //console.log("start:" + start.getFullYear() + ":" + (parseInt(start.getMonth()) + 1) + ":" + start.getDate() + ";end:" + end);
                             saveIncome(title, start, calendar);
-//                            console.log(start.getTime() + ";" + end.getTime());
                         }
                     }
                 });
                 calendar.fullCalendar('unselect');
             },
             eventClick: function (calEvent, jsEvent, view) {
-                console.log(calEvent.start.getTime());
                 var form = $("<form class='form-inline'><label>设置产品收益&nbsp;</label></form>");
                 form.append("<input class='middle' autocomplete=off type=text value='" + calEvent.title + "' /> ");
                 form.append("<button type='submit' class='btn btn-sm btn-success'><i class='icon-ok'></i>保存</button>");
 
                 var div = bootbox.dialog({
                     message: form,
-
                     buttons: {
                         "delete": {
                             "label": "<i class='icon-trash'></i>删除收益值",
@@ -147,25 +150,22 @@
                             "className": "btn-sm"
                         }
                     }
-
                 });
 
                 form.on('submit', function () {
                     var income = form.find("input[type=text]").val();
-                    calEvent.title = income;
+                    saveIncome(income, calEvent.start, calendar);
+                    /*calEvent.title = income;
                     calendar.fullCalendar('updateEvent', calEvent);
-                    div.modal("hide");
+                    div.modal("hide");*/
                     return false;
                 });
-
-
                 //console.log(calEvent.id);
                 //console.log(jsEvent);
                 //console.log(view);
 
                 // change the border color just for fun
                 //$(this).css('border-color', 'red');
-
             }
 
         });
@@ -195,18 +195,23 @@
     }
 
     function saveIncome(income, time, calendar) {
+        if (!/^-?(?:\d+|\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(income)) {
+            errorAlert("请输入数字");
+            return;
+        }
         $.ajax({
             url : "<%=SystemConst.BASE_PATH%>admin/productIncomeRecord/saveIncome",
             type : "POST",
             data : {
                 "productId": ${requestScope.productId},
                 "time": time.getTime(),
-                "income": income
+                "incomeAmount": income
             },
             dataType : "json",
             success : function (data) {
                 if (data.code == 0) {
-                    calendar.fullCalendar('renderEvent',
+                    window.location.reload();
+                    /*calendar.fullCalendar('renderEvent',
                         {
                             title: income,
                             start: time,
@@ -214,7 +219,7 @@
                             allDay: true
                         },
                         true // make the event "stick"
-                    );
+                    );*/
                 } else {
                     errorAlert(data.errorMsg);
                 }

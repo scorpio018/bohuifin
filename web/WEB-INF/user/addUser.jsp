@@ -125,7 +125,7 @@
                                                        value="${requestScope.user.nickName }"
                                                        style="display: inline;"></td>
                                         </tr>
-                                        <tr>
+                                        <%--<tr>
                                             <td>排序</td>
                                             <td><c:choose>
                                                 <c:when test="${requestScope.user.listOrder eq 0 }">
@@ -138,7 +138,7 @@
                                                            style="display: inline;">
                                                 </c:otherwise>
                                             </c:choose></td>
-                                        </tr>
+                                        </tr>--%>
                                         <tr>
                                             <td colspan="2" class="center">
                                                 <input type="hidden" name="deptId" value="0"/>
@@ -191,11 +191,6 @@
                     required: true,
                     minlength: 1,
                     maxlength: 16
-                },
-                listOrder: {
-                    required: true,
-                    maxlength: 5,
-                    minlength: 1
                 }
             },
             messages: {
@@ -210,9 +205,6 @@
                 nickName: {
                     required: "昵称不能为空",
                     maxlength: "昵称不得超过16个字"
-                },
-                listOrder: {
-                    required: "排序不能为空"
                 }
             },
             errorPlacement: function (error, element) {

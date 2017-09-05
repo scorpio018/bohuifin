@@ -140,6 +140,17 @@ public class ManagerController {
         }
     }
 
+    @RequestMapping(value = "/changePwd", method = RequestMethod.GET)
+    public String changePwd(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        return "WEB-INF/manager/pwd";
+    }
+
+    @RequestMapping(value = "/newPassword" ,method = RequestMethod.POST)
+    @ResponseBody
+    public boolean newPassword(HttpServletRequest request, HttpServletResponse response, String oldPwd, String newPwd) throws Exception {
+        return managerService.savePassword(request, oldPwd, newPwd);
+    }
+
     /**
      * 检查部门是否可以被删除
      * @param managerId

@@ -119,7 +119,7 @@
                         <c:if test="${fn:length(waitReplyTask)>0}">
                             <c:forEach items="${waitReplyTask}" var="task" end="3">
                                 <li>
-                                    <a href="<%=SystemConst.BASE_PATH%>question/startEdit2?path=question/waitReply&questionId=${task.questionId}&page=1&pageNum=15">
+                                    <a href="">
                                         <div class="clearfix">
 													<span class="pull-left">
 														<i class="btn btn-xs no-hover btn-pink icon-comment"></i>
@@ -134,7 +134,7 @@
                             </c:forEach>
 
                             <li>
-                                <a href="<%=SystemConst.BASE_PATH%>question/waitReply">
+                                <a href="">
                                     查看全部待答复任务
                                     <i class="icon-arrow-right"></i>
                                 </a>
@@ -145,7 +145,7 @@
 
                 <li class="light-blue">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <i class="icon-user"></i> ${sessionScope.user.truename}
+                        <i class="icon-user"></i> ${sessionScope.managerLogin.trueName}${sessionScope.dealerLogin.trueName}
                         <span class="user-info">
 									<small>&nbsp;</small>
 									<span></span>
@@ -323,7 +323,11 @@
     function changeWord() {
         BootstrapDialog.show({
             title: '修改密码',
-            message: $('<div></div>').load('users/changePwd'),
+            <c:choose>
+            <c:when test="${sessionScope.managerLogin ne null}">message: $('<div></div>').load('admin/managers/changePwd'),</c:when>
+            <c:otherwise>message: $('<div></div>').load('admin/dealers/changePwd'),</c:otherwise>
+            </c:choose>
+
             buttons: [{
                 label: '确定',
                 cssClass: 'btn-primary',
@@ -362,25 +366,30 @@
                             html: true
                         });
                     } else {
-                        $.post("users/newPassword/",
-                            {'oldPwd': $("#form-field-1").val(), 'newPwd': $("#form-field-2").val()}, function (data) {
+                        $.ajax({
+                            <c:choose>
+                            <c:when test="${sessionScope.managerLogin ne null}">
+                            url : "admin/managers/newPassword",
+                            </c:when>
+                            <c:otherwise>
+                            url : "admin/dealers/newPassword",
+                            </c:otherwise>
+                            </c:choose>
+                            type : "POST",
+                            data : {
+                                "oldPwd" : $("#form-field-1").val(),
+                                "newPwd": $("#form-field-2").val()
+                            },
+                            dataType : "json",
+                            success : function(data) {
                                 if (!data) {
-                                    swalType = "error";
-                                    swalTitle = "修改密码失败，请确认密码是否输入正确。";
-                                    closeDiag = false;
+                                    errorAlert("修改密码失败，请确认密码是否输入正确。");
+                                } else {
+                                    successAlert("修改成功", "请牢记您的密码", false);
+                                    dialogItself.close();
                                 }
-                                swal({
-                                    title: "<strong><h3>" + swalTitle + "</strong></h3>",
-                                    type: swalType,
-                                    confirmButtonColor: "#428bca",
-                                    confirmButtonText: "确定",
-                                    html: true
-                                }, function () {
-                                    if (closeDiag) {
-                                        dialogItself.close();
-                                    }
-                                });
-                            }, "json");
+                            }
+                        })
                     }
                 }
             }, {

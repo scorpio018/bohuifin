@@ -11,6 +11,7 @@ import cn.com.bohui.bohuifin.service.product.ProductService;
 import cn.com.bohui.bohuifin.service.product_income_record.ProductIncomeRecordService;
 import cn.com.bohui.bohuifin.service.sequences.SequencesService;
 import cn.com.bohui.bohuifin.util.LogicUtil;
+import cn.com.bohui.bohuifin.util.NumberUtil;
 import cn.com.bohui.bohuifin.util.TimeUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -54,14 +55,16 @@ public class ProductIncomeRecordController {
 
     @RequestMapping(value = "/admin/productIncomeRecord/saveIncome", method = RequestMethod.POST)
     @ResponseBody
-    public String saveIncome(HttpServletRequest request, HttpServletResponse response, String productId, long time, double income) throws Exception {
+    public String saveIncome(HttpServletRequest request, HttpServletResponse response, String productId, long time, double incomeAmount) throws Exception {
         ProductBean productBean = cacheUtils.getProductCache().getObject(productId);
         if (productBean == null) {
             return LogicUtil.getInstance().initResultJson(JsonCodeConst.CODE_ERROR_NO_PRODUCT, null, ErrorMsgConst.NO_PRODUCT);
         }
+        double income = NumberUtil.getInstance().numberFormatByDigit(incomeAmount / productBean.getProjectAmount(), 4);
         ProductIncomeRecordBean incomeBean = productIncomeRecordService.getIncomeBean(productId, time);
         if (incomeBean != null) {
             incomeBean.setIncome(income);
+            incomeBean.setIncomeAmount(incomeAmount);
             LogicUtil.getInstance().saveParamsBeforeUpdate(incomeBean, request);
             productIncomeRecordService.updateProductIncomeRecord(incomeBean);
         } else {
@@ -69,6 +72,7 @@ public class ProductIncomeRecordController {
             incomeBean.setRecordId(sequencesService.haveSeq(SeqConst.SEQ_PRODUCT_INCOME_RECORD).intValue());
             incomeBean.setProductId(productId);
             incomeBean.setIncome(income);
+            incomeBean.setIncomeAmount(incomeAmount);
             String curDayStr = TimeUtil.getStrYMD(new Date(time));
             Date dateYMD = TimeUtil.getDateYMD(curDayStr);
             Timestamp incomeTime = new Timestamp(dateYMD.getTime());
