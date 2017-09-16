@@ -30,9 +30,13 @@ public class SeqConst {
     public static String SEQ_PRODUCT_TAG = "sn_product_tag_id";
 
     /**
-     * 产品每天的收益表ID sn_product_income_record
+     * 产品每天的收益表ID sn_product_income_record_id
      */
     public static String SEQ_PRODUCT_INCOME_RECORD = "sn_product_income_record_id";
+    /**
+     * 用户对产品的投资记录ID sn_user_product_income_record_id
+     */
+    public static String SEQ_USER_PRODUCT_INCOME_RECORD_ID = "sn_user_product_income_record_id";
 
     /**
      * 角色ID sn_role_id

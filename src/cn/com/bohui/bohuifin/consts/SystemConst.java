@@ -96,6 +96,8 @@ public class SystemConst {
     public static int STATE_REFUSE = -2000;
     // 数据等待确认标识
     public static int STATE_WAIT_CONFIRM = 200;
+    // 数据状态失败标识
+    public static int STATE_FAILED = -200;
 
     // 分页的一页显示多少条数据的默认值
     public static int PAGE_SIZE_DEFAULT = 15;

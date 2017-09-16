@@ -10,6 +10,7 @@ import cn.com.bohui.bohuifin.consts.SystemConst;
 import cn.com.bohui.bohuifin.service.product.ProductService;
 import cn.com.bohui.bohuifin.service.product_income_record.ProductIncomeRecordService;
 import cn.com.bohui.bohuifin.service.sequences.SequencesService;
+import cn.com.bohui.bohuifin.service.user_product_amount.UserProductAmountService;
 import cn.com.bohui.bohuifin.util.LogicUtil;
 import cn.com.bohui.bohuifin.util.NumberUtil;
 import cn.com.bohui.bohuifin.util.TimeUtil;
@@ -38,6 +39,9 @@ public class ProductIncomeRecordController {
     private ProductService productService;
 
     @Resource
+    private UserProductAmountService userProductAmountService;
+
+    @Resource
     private SequencesService sequencesService;
 
     @Resource
@@ -56,11 +60,13 @@ public class ProductIncomeRecordController {
     @RequestMapping(value = "/admin/productIncomeRecord/saveIncome", method = RequestMethod.POST)
     @ResponseBody
     public String saveIncome(HttpServletRequest request, HttpServletResponse response, String productId, long time, double incomeAmount) throws Exception {
-        ProductBean productBean = cacheUtils.getProductCache().getObject(productId);
+        /*ProductBean productBean = cacheUtils.getProductCache().getObject(productId);
         if (productBean == null) {
             return LogicUtil.getInstance().initResultJson(JsonCodeConst.CODE_ERROR_NO_PRODUCT, null, ErrorMsgConst.NO_PRODUCT);
-        }
-        double income = NumberUtil.getInstance().numberFormatByDigit(incomeAmount / productBean.getProjectAmount(), 4);
+        }*/
+        // 获取该产品已投资的金额，用于计算收益率
+        double productHasInvestedAmount = userProductAmountService.getProductHasInvestedAmount(productId);
+        double income = NumberUtil.getInstance().numberFormatByDigit(incomeAmount / productHasInvestedAmount, 4);
         ProductIncomeRecordBean incomeBean = productIncomeRecordService.getIncomeBean(productId, time);
         if (incomeBean != null) {
             incomeBean.setIncome(income);
@@ -78,7 +84,7 @@ public class ProductIncomeRecordController {
             Timestamp incomeTime = new Timestamp(dateYMD.getTime());
             incomeBean.setIncomeTime(incomeTime);
             LogicUtil.getInstance().saveParamsBeforeInsert(incomeBean, request);
-            productIncomeRecordService.saveProductIncomeRecord(incomeBean);
+            productIncomeRecordService.saveProductIncomeRecord(incomeBean, request);
         }
         return LogicUtil.getInstance().initResultJson(JsonCodeConst.CODE_SUCCESS, null, null);
     }

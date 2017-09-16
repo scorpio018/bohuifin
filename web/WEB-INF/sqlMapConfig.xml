@@ -43,6 +43,7 @@
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/SysPrivMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UserAccountsMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UserProductAmountMapper.xml"/>
+      <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UserProductIncomeRecordMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UserRoleMapper.xml"/>
       <mapper resource="cn/com/bohui/bohuifin/mapper/xml/UsersMapper.xml"/>
   </mappers>
