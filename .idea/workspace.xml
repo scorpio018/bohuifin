@@ -6,12 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/ProductBean.class" afterPath="$PROJECT_DIR$/out/artifacts/bohuifin_war_exploded/WEB-INF/classes/cn/com/bohui/bohuifin/bean/ProductBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/ProductBean.class" afterPath="$PROJECT_DIR$/out/production/bohuifin/cn/com/bohui/bohuifin/bean/ProductBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/产品模块和交易员模块的一期功能设计文档.txt" afterPath="$PROJECT_DIR$/doc/产品模块和交易员模块的一期功能设计文档.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SeqConst.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SeqConst.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/consts/SystemConst.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/product/ProductIncomeRecordController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_income_record/ProductIncomeRecordService.java" afterPath="$PROJECT_DIR$/src/cn/com/bohui/bohuifin/service/product_income_record/ProductIncomeRecordService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/sqlMapConfig.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/sqlMapConfig.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +51,7 @@
       <file leaf-file-name="UserProductAmountController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/users/UserProductAmountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
+            <state relative-caret-position="502">
               <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
               <folding />
             </state>
@@ -1358,7 +1352,7 @@
       <workItem from="1503881977639" duration="37220000" />
       <workItem from="1504496123367" duration="18602000" />
       <workItem from="1504792276067" duration="1247000" />
-      <workItem from="1505521186643" duration="15633000" />
+      <workItem from="1505521186643" duration="15855000" />
     </task>
     <task id="LOCAL-00001" summary="添加查看用户余额、投资产品两个功能的接口；&#10;新建“股神说”模块">
       <created>1502184347277</created>
@@ -1388,15 +1382,21 @@
       <option name="project" value="LOCAL" />
       <updated>1504603372208</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新增“用户对应产品收益详情”模块，用于记录用户投资的产品每天的收益详情；&#10;修改产品收益处的逻辑，将用户对应此产品的收益一并计算出来（目前仅在新增产品收益处时增加用户收益同步计算，修改时并未添加）">
+      <created>1505550310483</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1505550310483</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="535432000" />
+    <option name="totallyTimeSpent" value="535654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1418,12 +1418,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960597" sideWeight="0.49369368" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26332623" sideWeight="0.5063063" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32937366" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.4978701" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1444,7 +1444,8 @@
     <MESSAGE value="新增交易员留言模块后台逻辑；&#10;新增交易员留言列表模块前台页面、新增/修改交易员留言列表模块部分代码" />
     <MESSAGE value="新增“股神说”功能；&#10;新增产品、交易员的设计文档；&#10;备份数据库" />
     <MESSAGE value="修改“设置产品收益”处的逻辑，变为添加每天赚到的金额，系统自动计算盈利率；&#10;修改产品列表中的显示项；&#10;修复部分bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改“设置产品收益”处的逻辑，变为添加每天赚到的金额，系统自动计算盈利率；&#10;修改产品列表中的显示项；&#10;修复部分bug" />
+    <MESSAGE value="新增“用户对应产品收益详情”模块，用于记录用户投资的产品每天的收益详情；&#10;修改产品收益处的逻辑，将用户对应此产品的收益一并计算出来（目前仅在新增产品收益处时增加用户收益同步计算，修改时并未添加）" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增“用户对应产品收益详情”模块，用于记录用户投资的产品每天的收益详情；&#10;修改产品收益处的逻辑，将用户对应此产品的收益一并计算出来（目前仅在新增产品收益处时增加用户收益同步计算，修改时并未添加）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1996,7 +1997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/com/bohui/bohuifin/controller/users/UserProductAmountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="502">
           <caret line="52" column="17" lean-forward="true" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           <folding />
         </state>
